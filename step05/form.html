@@ -29,7 +29,39 @@
                     <input type="radio" name="radioGroup" id="radio02"><label for="radio02">item02</label>
                     <input type="radio" name="radioGroup" id="radio03"><label for="radio03">item03</label>
                 </li>
+                <li>
+                    <label for="selectJob">직업선택:</label>
+                    <select id="selectJob">
+                        <option>선택하세요</option>
+                        <optgroup label="구직자">
+                            <option>무직</option>
+                            <option>학생</option>
+                        </optgroup>
+                        <optgroup label="근로자">
+                            <option>전문직</option>
+                            <option>공무원</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <label for="talkBox">하고싶은말:</label>
+                    <textarea id="talkBox" cols="30" rows="10">text</textarea>
+                </li>
+                <li>
+                    <input type="button" value="">
+                    <input type="file">
+                    <input type="submit" value="확인">
+                    <input type="reset" value="취소">
+                </li>
             </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Html5 input</legend>
+            <label for="userNick">닉네임:</label>
+            <input type="text" id="userNick" placeholder="8자미만" maxlength="8">
+            <input type="email" placeholder="geeyounjee@gmail.com" readonly>
+
+            <input type="number" min="10" max="100" step="10">
         </fieldset>
     </form>
 </body>
