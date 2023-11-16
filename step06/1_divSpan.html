@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div Layout</title>
+    <style>
+        header{
+            background-color: red;
+        }
+        header ul li{
+            background-color: blue;
+        }
+        section{
+            background-color: yellow;
+        }
+        section article{
+            background-color: green;
+        }
+        section aside{
+            background-color: orange;
+        }
+        footer{
+            background-color: purple;
+        }
+        div:first-child div ul{
+            background-color: yellow;
+        }
+        div:nth-child(2) div{
+            background-color: violet;
+        }
+        body>div:last-of-type div{
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>header</div>
+    </div>
+    <div>
+        <div>section</div>
+    </div>
+    <div>
+        <div>footer</div>
+    </div>
+</body>
+</html>

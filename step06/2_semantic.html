@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic</title>
+</head>
+<body>
+    <header>
+        <p>
+            모든 page 에서 공통으로 사용되는 상단영역
+            page 상단에는 logo navigation sideBox 등이 들어간다
+        </p>
+        <h1>LOGO</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">menu</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <input type="button" value="wishList">
+            <input type="button" value="signIn">
+        </div>
+    </header>
+    <section>
+        <h2>section 에는 머리글을 넣어줘야 한다.</h2>
+        <!-- !section 에는 반드시 h 가 들어가야한다 -->
+        <!-- !만약 h 가 없다면 자손의 머리글을 자신이 사용 -->
+        <p>
+            복합적인 contentGroup 이 들어가는 section 
+        </p>
+        <div>
+            <h3>subTitle</h3>
+        </div>
+        <article>
+            <h3>article 에도 머리글을 넣어줘야 한다</h3>
+            <p>
+                주 content 속성이 text 이고 
+                독립적으로 취급 될 수 있는 문서 
+            </p>
+            <time datetime="2023-11-16T20:58:00+09:00">23년 11월 16일 오후 08시 58분</time>
+            <!-- 
+                time 시간을 알려주는 태그 
+                끝에 + 로 타임존 정보 (협정세계시) 를 표시
+             -->
+        </article>
+        <aside>
+            전체적으로 사용하는 globalElement 중 좌,우측에 있는 
+            menu banner quickMenu 등등의 content 가 들어가는 aside
+        </aside>
+    </section>
+    <footer>
+        저작권정보 , 증명/신고내용, 회사 주소, 연락처(유선번호 fax 이메일)
+        개인정보 취급 방침 이용약관 / 
+        결제가 가능한 사이트는 환불/ 반품/ 교환 등의 정책 
+        하단의 globalElement
+    </footer>
+</body>
+</html>
