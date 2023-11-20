@@ -7,9 +7,41 @@
     <title>tajam</title>
 </head>
 <body>
+    <header id="home">
+        <h1>
+            <a href="#home">
+                <img src="images/logo.png" alt="welcome to TAJAM">
+            </a>
+        </h1>
+        <nav>
+            <ul>
+                <li class="active"><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#expertise">EXPERTISE</a></li>
+                <li><a href="#teams">TEAMS</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#peopleSay">PEOPLE SAY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li>
+                <h2>We Are Awesome Creative Agency</h2>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                <a href="#">LEARN MORE</a>
+            </li>
+        </ul>
+        <ol>
+            <li><a href="#" class="active">slide01</a></li>
+            <li><a href="#">slide02</a></li>
+            <li><a href="#">slide03</a></li>
+            <li><a href="#">slide04</a></li>
+        </ol>
+    </header>
+
     <section id="about">
         <figure>
-            <img src="" alt="tajam ci">
+            <img src="images/ci.png" alt="tajam ci">
             <figcaption>
                 <h2>OUR STORY</h2>
                 <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
@@ -18,23 +50,113 @@
             </figcaption>
         </figure>
     </section>
-    <section id="teams">
-        <!-- figure 사용하지만 image 태그를 사용하지 않고 css background 처리 가능 -->
-        
+    <section>
+        <a href="">▷</a>
+        <h2>WATCH OUR STORY</h2>
+        <!-- 모듈작업 필요에 따라 다른 tag 를 사용 -->
     </section>
-    <!-- 
-        image 를 넣는 방법 
-        1. image tag 로 넣기
-        2. css background 처리하기
-     -->
-     <!-- 
-        line  
-        1. css border 처리
-        2. hr tag / 공간을 분리 
-        3. css background 처리 
-      -->
-      <!-- 
-        반복되는 아이콘 (대칭되는 아이콘)은 같은 크기로 자르기
-       -->
+    <section id="expertise">
+        <h2>EXPERTISE</h2>
+        <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+        <hr> 
+        <ul>
+            <li>
+                <h3>WEB DESIGN &amp; DEVELOPMENT</h3>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li>
+                <h3>BRANDING IDENTITY</h3>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li>
+                <h3>MOBILE APP</h3>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li>
+                <h3>SEARCH ENGINE OPTIMIZATION</h3>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li>
+                <h3>GAME DEVELOPMENT</h3>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+            <li>
+                <h3>MADE WITH LOVE</h3>
+                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+            </li>
+        </ul>
+        <!-- 상단의 line 은 tag 로 처리 -->
+        <!-- icon 은  css background 처리 -->
+    </section>
+    <section id="teams">
+        <h2>MEET OUR AMAZING TEAM</h2>
+        <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+        <hr>
+        <ul>
+            <li>
+                <figure>
+                    <figcaption>
+                        <dl>
+                            <dt>SEMF UCUK</dt>
+                            <dd>CEO & FOUNDER</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption>
+                        <dl>
+                            <dt>DIK ADALIN</dt>
+                            <dd>ENGINEERING</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption>
+                        <dl>
+                            <dt>JENG KOL</dt>
+                            <dd>DESIGNER</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <figcaption>
+                        <dl>
+                            <dt>PET ROMAK</dt>
+                            <dd>MARKETING</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+        <p>Become part of our dream team, let’s join us ! </p>
+        <a href="#">WE ARE HIRING</a>
+    </section>
+    <section>
+        <h2>
+            OUR WORKS
+            <a href="#">See All Project in dribbble &gt;</a>
+        </h2>
+        <ul>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+            <li><a href="#"><img src="https://via.placeholder.com/270x200" alt="undefined"></a></li>
+        </ul>
+        <a href="#">LOAD MORE</a>
+    </section>
 </body>
 </html>
