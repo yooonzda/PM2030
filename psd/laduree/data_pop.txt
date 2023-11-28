@@ -1,0 +1,94 @@
+
+01
+NOISETTE
+Deux coques de macaron végan saupoudrées de poudre de noisette garnies d’une ganache à la noisette du Piémont.
+Allergènes
+Amande, Noisette, Fruits à coque, Oeuf, Soja, Lait, Poisson
+
+02
+GINGEMBRE
+Deux coques de macaron roses garnies d’une confiture de framboise et gingembre parfumée à la rose.
+Allergènes	
+Oeuf, Amande
+
+03
+CALISSON
+Deux coques de macarons saupoudrées de sucre jaune et garnies d’un crémeux à l’orange confite, fleur d’oranger et amande.
+Allergènes
+Oeuf, Amande
+
+04
+BRIOCHE
+Deux coques de macaron surmontées d’amandes effilées et garnies d’un crémeux au chocolat dulcey, raisins secs de Corinthe, citrons et oranges confites
+Allergènes
+Oeuf, Lait, Soja, Fruits à coque, Amande
+
+05
+FRAMBOISE
+Deux coques de macaron amande garnies de confiture à la framboise.
+Allergènes
+Oeuf, Amande
+
+06
+VANILLE
+Deux coques de macaron amande vanille garnies d'un crémeux parfumé à la vanille.
+Allergènes
+Soja, Oeuf, Lait, Amande
+
+07
+CHOCOLAT
+Deux coques de macaron amande chocolat garnies de ganache au chocolat.
+Allergènes
+Oeuf, Lait, Soja, Amande
+
+08
+CARAMEL
+Deux coques de macaron amande garnies de caramel à la fleur de sel.
+Allergènes
+Oeuf, Lait, Amande
+
+09
+PISTACHE
+Deux coques de macaron amande pistache garnies de crème au beurre parfumée à la pistache.
+Allergènes
+Oeuf, Lait, Amande, Pistache
+
+10
+SAPIN
+Audace et délicatesse pour ce macaron garni d'un crémeux délicatement parfumé d'une note d’huile essentielle de sapin Nordmann et Épicéa
+Allergènes
+Oeuf, Lait, Fruits à coque, Amande
+
+11
+ROSE
+Deux coques de macaron amande garnies d’un crémeux parfumée à la rose.
+Allergènes
+Oeuf, Lait, Soja, Amande
+
+12
+AMANDE
+A l'occasion de son 160ème anniversaire, la Maison Ladurée à imaginé ce macaron au goût d'amande amère.
+Allergènes
+Oeuf, Amande
+
+13
+CITRON
+Deux coques de macaron amande garnies d'un crémeux parfumé au citron.
+Allergènes
+Oeuf, Lait, Soja, Amande
+
+14
+CAFÉ
+Deux coques de macaron amande café garnies de crème au beurre parfumée au café.
+Allergènes
+Soja, Oeuf, Lait, Amande
+
+15
+D’ORANGER
+Deux coques de macaron amande garnies d'un crémeux parfumé à la fleur d’oranger.
+Allergènes
+Soja, Oeuf, Lait, Amande
+
+
+
+
