@@ -1,4 +1,0 @@
-
-item image slice 390x300
-
-listPage 06 까지 구조 완성해 오기
