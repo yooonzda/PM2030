@@ -27,8 +27,207 @@
             <input type="button" value="Sign In">
         </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#">Top Sales</a></li>
+            <li><a href="#">Brand Focus</a></li>
+            <li><a href="#" class="active">Hi-tech</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <input type="search" placeholder="I’m looking for ..." title="searchField">
+    </nav>
+    <section>
+        <div>
+            <a href="#">&lt;</a>
+            <a href="#">&gt;</a>
+        </div>
+        <ol>
+            <li><a href="#">slide</a></li>
+            <li><a href="#">slide</a></li>
+            <li><a href="#">slide</a></li>
+            <li><a href="#">slide</a></li>
+        </ol>
+        <ul>
+            <li>
+                <figure>
+                    <img src="images/sample_slider.png" alt="slideExample">
+                    <figcaption>
+                        <dl>
+                            <dt>iPhone 6 32Gb Black</dt>
+                            <dd>At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                        </dl>
+                        <input type="button" value="Buy Now">
+                        <!-- <h3></h3>
+                        <p></p>
+                        <input type="button" value="">
+                        <a href=""></a> -->
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <div>
+        <form>
+            <label for="sb_select">Sort By:</label>
+            <div class="selectBox">
+                <select id="sb_select">
+                    <option>Best Match</option>
+                </select>
+            </div>
+
+            <label for="sb_search">Keywords</label>
+            <input type="search" placeholder="Tablet" id="sb_search">
+
+            <label for="sb_minprice">Price</label>
+            <input type="text" id="sb_minprice">
+            <span>-</span>
+            <input type="text" id="sb_maxprice">
+
+            <input type="checkbox" id="sb_checkFreeShip">
+            <!-- 
+                input:checkbox 는 display : none
+                label 로 동작 
+            -->
+            <label for="sb_checkFreeShip">Free Shipping</label>
+
+            <label for="sb_shipSelect">Ship to:</label>
+            <div class="selectBox">
+                <select id="sb_shipSelect">
+                    <option>USA</option>
+                </select>
+            </div>
+        </form>
+        <aside>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Top Sales</a>
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Brand Focus</a>
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Hi-Tech</a>
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Home</a>
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">Sale</a>
+                        <ol>
+                            <li><a href="#">Cell Phones</a></li>
+                            <li><a href="#">Cameras</a></li>
+                            <li><a href="#">Computers</a></li>
+                            <li><a href="#">Tv, Audio</a></li>
+                            <li><a href="#">Video Games</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+            <form>
+                <fieldset>
+                    <legend>Available</legend>
+                    <input type="radio" name="ava_select" id="ava_store">
+                    <label for="ava_store">In Storage</label>
+                    <span>45</span>
+                    <input type="radio" name="ava_select" id="ava_online">
+                    <label for="ava_online">In Online-Shop</label>
+                    <span>2</span>
+                </fieldset>
+                <fieldset>
+                    <legend>brands <a href="#">All</a></legend>
+                    <input type="checkbox" id="brand_op01">
+                    <label for="brand_op01">Apple</label>
+                    <span>32</span>
+                    <input type="checkbox" id="brand_op02">
+                    <label for="brand_op02">JBL</label>
+                    <span>14</span>
+                    <input type="checkbox" id="brand_op03">
+                    <label for="brand_op03">Bose</label>
+                    <span>3</span>
+                    <input type="checkbox" id="brand_op04">
+                    <label for="brand_op04">Nest</label>
+                    <span>5</span>
+                </fieldset>
+                <fieldset>
+                    <!-- ? (input:checkbox#condition_op$+label)*5 -->
+                    <legend>Condition</legend>
+                    <input type="checkbox" id="condition_op1">
+                    <label for="condition_op1">New</label>
+                    <input type="checkbox" id="condition_op2">
+                    <label for="condition_op2">Manufacturer Refurbished</label>
+                    <input type="checkbox" id="condition_op3">
+                    <label for="condition_op3">Seller Refurbished</label>
+                    <input type="checkbox" id="condition_op4">
+                    <label for="condition_op4">Used</label>
+                    <input type="checkbox" id="condition_op5">
+                    <label for="condition_op5">For Parts or not Working</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery Options</legend>
+                    <input type="radio" name="delivery_select" id="delivery_free">
+                    <label for="delivery_free">Free</label>
+                    <input type="radio" name="delivery_select" id="delivery_dollar">
+                    <label for="delivery_dollar">$4.99</label>
+                </fieldset>
+            </form>
+        </aside>
+        <section></section>
+        <div></div>
+    </div>
     <footer>
-        
+        <div>
+            <h2><img src="images/logo_footer.png" alt="portland"></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <ol>
+                <li><a href="#">twitter</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">google</a></li>
+            </ol>
+        </div>
+        <div>
+            <p>She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
