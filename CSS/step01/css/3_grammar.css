@@ -1,0 +1,26 @@
+ol li{
+    color: tomato;
+}
+ul li{
+    color: blue;
+}
+ul:first-of-type{
+    border: 3px solid teal;
+}
+ul:nth-of-type(2){
+    background-color: violet;
+}
+ul:last-of-type{
+    background-color: steelblue;
+}
+
+dl dt{
+    color: orange;
+}
+ol+dl dt{
+    background-color: brown;
+}
+
+ul li figure figcaption dl dt{
+    background-color: red;
+}

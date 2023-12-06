@@ -1,0 +1,33 @@
+p{
+    color: green;
+}
+.classEx1{
+    background-color: tomato;
+}
+
+.btn{
+    font-size: 50px;
+}
+.btn.create{
+    background-color: yellowgreen;
+}
+.btn.modify{
+    background-color: aquamarine;
+}
+.btn.delete{
+    background-color: violet;
+}
+.btn.confirm{
+    background-color: turquoise;
+}
+.btn.cancel{
+    background-color: slategrey;
+}
+
+#userName{
+    border: 1px solid tomato;
+    line-height: 21px;
+    font-size: 12px;
+    padding: 5px 15px;
+    color: goldenrod;
+}
