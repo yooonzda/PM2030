@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+body{
+    font-family: 'Nanum Gothic';
+}
+h1{
+    font-weight: 800;
+    font-size: 20px;
+    color: blue;
+}
+h2{
+    font-weight: 600;
+    font-size: 15px;
+    color: green;
+}
+h3{
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.5);
+}
+p{
+    font-size: 14px;
+}
+p.letter{
+    letter-spacing: 20px;
+}
+p.word{
+    word-spacing: 20px;
+}
+p[class^='w_']{
+    width: 150px;
+    border: 1px solid black; 
+    line-height: 21px;
+}
+p.w_normal{
+    white-space: normal;
+}
+p.w_nowrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a{
+    display: block;
+    margin-bottom: 20px;
+}
+a.t_deco_N{
+    text-decoration: none;
+    text-transform: none;
+    color: green;
+}
+a.t_deco_U{
+    text-decoration: underline;
+    text-transform: lowercase;
+    color: red;
+}
+a.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color: fuchsia;
+}
+a.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase; color: blue;
+}
+p.DR_ltr{
+    /* direction: ltr; */
+    text-align: left;
+}
+p.DR_rtl{
+    /* direction: rtl; */
+    text-align: right;
+}
+/* ! text-align inline 관련 속성을 정리 할 수 있다 */
+
+div.v_alignTest{
+    background-color: purple; color: white;
+}
+div.v_alignTest img{
+    width: 200px;
+    vertical-align: middle;
+}
+div.v_alignTest span{
+    vertical-align: bottom;
+}
+/* 
+* display inline / inline-block 
+* 기준은 가장 높은 자손이 갖는다
+
+* baseline / middle
+* baseline 부모의 중앙
+* middle 자손 중 가장 높이가 높은 태그의 가운데
+*/
+p.t_indent{
+    text-indent: 200px;
+}
+
+button.test{
+    text-indent: -9999px;
+}
