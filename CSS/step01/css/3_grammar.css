@@ -1,26 +1,98 @@
+/* * 동일한 대상에 여러 동작을 넣으면 안된다. */
+/* ul:first-of-type{
+    background-color: red;
+}
+ul:nth-of-type(1){
+    background-color: blue;
+} */
+
+/* * 반복되는 코드는 줄여서 효율을 높인다 */
+/* ul li,
 ol li{
-    color: tomato;
+    color: pink;
+} */
+/* ! 1. 그룹화 */
+/* ! 2. 모듈링 (class) */
+
+/* * inherit */
+/* * 부모의 성질을 내려 받는다 */
+/* 
+body{
+    color: red;
 }
 ul li{
+    color: yellow;
+} */
+
+/* 
+ul:first-of-type{
+    background-color: red;
+}
+ul:first-of-type li{
     color: blue;
 }
-ul:first-of-type{
-    border: 3px solid teal;
+ol{
+    background-color: orange;
 }
-ul:nth-of-type(2){
-    background-color: violet;
+ol li{
+    color: green;
 }
-ul:last-of-type{
-    background-color: steelblue;
-}
-
-dl dt{
-    color: orange;
+ol+dl{
+    background-color: yellow;
 }
 ol+dl dt{
-    background-color: brown;
+    color: yellowgreen;
+}
+ol+dl dd{
+    color: fuchsia;
+}
+ul:last-of-type{
+    background-color: green;
+}
+figure figcaption{
+    background-color: blue;
+}
+figure figcaption dl dt{
+    color: orange;
+}
+figure figcaption dl dd{
+    color: red;
+} */
+
+body{
+    font-size: 50px; text-transform: uppercase;
 }
 
-ul li figure figcaption dl dt{
+ul{
     background-color: red;
+}
+ul:first-of-type li{
+    color: blue;
+}
+ul:last-of-type{
+    background-color: green;
+}
+ol{
+    background-color: orange;
+}
+ol li{
+    color: green;
+}
+ol+dl{
+    background-color: yellow;
+}
+ol+dl dt{
+    color: greenyellow;
+}
+ol+dl dd{
+    color: pink;
+}
+ul li figure figcaption dl{
+    background-color: blue;
+}
+ul li figure figcaption dl dt{
+    color: orange;
+}
+ul li figure figcaption dl dd{
+    color: red;
 }
