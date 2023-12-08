@@ -1,0 +1,19 @@
+html, body{
+    height: 100%;
+}
+body, div p{
+    margin: 0;
+}
+div{
+    background-color: blue;
+    height: 100%;
+    padding: 50px;
+}
+div p{
+    color: #fff;
+    background-color: tomato;
+    line-height: 100px;
+}
+div span{
+    background-color: yellow;
+}
