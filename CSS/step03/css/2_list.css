@@ -1,0 +1,19 @@
+
+ul.custom li{
+    background-image: url('../images/bul_li.gif');
+    background-repeat: no-repeat;
+    list-style: none;
+    background-position: left center;
+    padding-left: 10px;
+}
+/* 
+background image 사용시
+태그의 영역을 확인하고 
+background image 가 들어가야하는 영역을 padding 으로 미리 확보하기
+*/
+ol{
+    list-style: lower-roman;
+}
+ul.checkListStyle{
+    list-style: square;
+}

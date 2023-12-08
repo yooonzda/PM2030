@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example mac</title>
+    <link rel="stylesheet" href="css/exampleMAC.css">
+</head>
+<body>
+    <!-- ul li 마카롱 이미지는 css background -->
+    <p>
+        Notre service client met tout en œuvre pour vous répondre dans les meilleurs délais.
+        Pour toute information, nous sommes à votre disposition par mail en renseignant le formulaire ci-dessous :
+    </p>
+    <ul>
+        <li>
+            <p>Avez-vous pensé à consulter notre FAQ ? Vous y trouverez peut-être votre réponse.</p>
+            <a href="#">Consulter la FAQ</a>
+        </li>
+        <li>
+            <p>Envoyez nous votre candidature spontanée par email.</p>
+            <a href="#">Postuler chez Ladurée</a>
+        </li>
+        <li>
+            <p>
+                Vous êtes passionnés par notre marque et souhaitez investir ? Contactez nous par
+            </p>
+            <a href="mailto:lid@laduree.com">lid@laduree.com</a>
+        </li>
+    </ul>
+    <form>
+        <div>
+            <ul>
+                <li>
+                    <label for="userNation">Pays *</label>
+                    <select id="userNation">
+                        <option>Pays</option>
+                        <option>AUTRICHE</option>
+                        <option>BELGIQUE</option>
+                        <option>BULGARIE</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="userEmail">Adresse email *</label>
+                    <input type="email" id="userEmail">
+                </li>
+                <li>
+                    <label for="userGender">Civilité</label>
+                    <select id="userGender">
+                        <option>Monsieur</option>
+                        <option>Madame</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="firstName">Prénom *</label>
+                    <input type="text" id="firstName">
+                </li>
+                <li>
+                    <label for="lastName">Nom *</label>
+                    <input type="text" id="lastName">
+                </li>
+                <li>
+                    <label for="userPurpose">Objet *</label>
+                    <select id="userPurpose">
+                        <option>Informations Produit</option>
+                        <option>Réclamation Commande</option>
+                        <option>Suivi de commande</option>
+                        <option>Autre demande</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <label for="opinionBox"></label>
+            <textarea id="opinionBox"></textarea>
+            <input type="submit" value="ENVOYER MA DEMANDE">
+        </div>
+    </form>
+</body>
+</html>

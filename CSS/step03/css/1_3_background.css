@@ -1,0 +1,19 @@
+html,body{
+    height: 100%;
+}
+body{
+    margin: 0;
+    background-image: url('../images/BackgroundFront.png'), url('../images/BackgroundBack.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 
+    right left center
+    top bottom center 
+    % px
+    */
+    background-attachment: fixed;
+}
+p{
+    height: 3000px; background-color: rgba(0, 0, 0, 0.5);
+}
