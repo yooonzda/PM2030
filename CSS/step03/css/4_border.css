@@ -1,0 +1,58 @@
+html,body{
+    height: 100%;
+}
+div{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+div.singleBox{
+    /* border: 1px solid blue; */
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+}
+div.multiBox{
+    border-width: 1px 5px 10px 20px;
+    border-style: solid dotted dashed double;
+    border-color: blue chocolate rebeccapurple seagreen;
+    /* 속성별로 분리 */
+    border-top: 1px solid blue;
+    border-right: 5px dotted chocolate;
+    border-bottom: 10px dashed rebeccapurple;
+    border-left: 20px double seagreen;
+    /* 방향별로 분리 */
+    padding: 100px 0 0 0;
+    padding-top: 100px;
+}
+.grooveBox{
+    border: 20px groove #666;
+}
+.ridgeBox{
+    border: 20px ridge #666;
+}
+.insetBox{
+    border: 20px inset #555;
+}
+.outsetBox{
+    border: 20px outset #555;
+}
+.outsetBox:hover{
+    border-style: inset;
+}
+.radiusBox{
+    border-radius: 10px 80px;
+    background-color: aqua;
+}
+.circleBox{
+    width: 300px; height: 300px;
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+.searchField{
+    display: block; 
+    width: 100%;
+    line-height: 50px;
+    font-size: 20px;
+}
