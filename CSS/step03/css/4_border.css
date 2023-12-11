@@ -55,4 +55,11 @@ div.multiBox{
     width: 100%;
     line-height: 50px;
     font-size: 20px;
+    margin-bottom: 100px;
+    border-width: 0 0 1px;
+    background-image: url('../images/search_FILL0_wght100_GRAD-25_opsz40.svg'), url('../images/close_FILL0_wght100_GRAD-25_opsz40.svg');
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    background-size: 25px;
+    outline: none;
 }
