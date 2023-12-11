@@ -1,0 +1,18 @@
+p+ul:after{
+    content: ''; display: block; clear: both;
+}
+p+ul li{
+    display: block;
+    float: left;
+    width: 30%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+p+ul li:not(:first-of-type){
+    margin-left: 3.333%;
+}
+p+ul li a{
+    text-decoration: none;
+}
