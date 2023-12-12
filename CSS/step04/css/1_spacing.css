@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    /* margin: 10px 20px; */
+    /* margin: 20px 2px 0px; */
+    /* margin: 10px 5px 10px 4px; */
+    /* margin-bottom: 20px; */
+}
+div:nth-of-type(1){
+    margin: 30px; background-color: gray;
+}
+div:nth-of-type(2){
+    background-color: gray;
+    margin: 0 10px; padding: 20px 0;
+    /* ! 첫번째 div 와 margin이 중복 (겹침) */
+}
+div:nth-of-type(2) article{
+    background-color: tomato; 
+}
+div:nth-of-type(3){
+    width: 300px; margin: 0 auto;
+    background-color: rebeccapurple;
+    /* 
+    ! ( 화면의 전체 너비 - content )/2
+    */
+}
+div:nth-of-type(4){
+    width: 300px; background-color: yellow;
+    border: 10px solid tomato;
+    padding: 50px;
+    box-sizing: border-box;
+}
