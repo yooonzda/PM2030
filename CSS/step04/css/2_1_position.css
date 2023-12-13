@@ -1,0 +1,23 @@
+#wrap{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: gray;
+}
+#wrap div{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+#wrap div:nth-of-type(1){
+    background-color: red;
+    z-index: 100;
+}
+#wrap div:nth-of-type(2){
+    background-color: green;
+    z-index: 1000;
+}
+#wrap div:nth-of-type(3){
+    background-color: blue;
+}
