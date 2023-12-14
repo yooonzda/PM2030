@@ -2,3 +2,68 @@
     margin: 0;
     padding: 0;
 }
+body{
+    padding: 150px 200px 300px;
+}
+h1{
+    background-image: url('../images/googleLOGO.png');
+    background-repeat: no-repeat;
+    line-height: 90px;
+    /* 
+    높이를 설정 할 때 
+    1. height 
+    2. line-height ( 줄 바꿈이 일어나지 않을 때 )
+    3. padding
+    */
+    text-indent: -9999px;
+    margin-bottom: 250px;
+}
+h2{
+    font-size: 150px;
+    font-weight: 300;
+    /* 
+    100 Thin
+    200 Extrathin
+    300 Light
+    400 Regular
+    500 Medium
+    600 SemiBold
+    700 Bold
+    800 ExtraBold
+    900 Black
+    */
+    color: #444;
+    text-align: right;
+    margin-bottom: 150px;
+}
+h3{
+    font-size: 40px;
+    font-weight: 500;
+    color: #152a4c;
+    border-bottom: 1px solid #152a4c;
+    padding-bottom: 20px;
+    /* 
+    ? 포토샵 시안의 25px 을 padding-bottom 으로 넣었지만
+    ? 실제 화면은 25px 보다 더 큰 여백이 만들어짐
+    ! line-height
+    ! 만약에 line-height 값을 부여했다면 -5px 이 아닌 
+    ! ((line-height) - font-size )/2
+    */
+    margin-bottom: 45px;
+}
+ol{
+    list-style: none;
+}
+ol li:first-of-type ul{
+    padding-left: 46px;
+}
+p,
+ol li:first-of-type ul li{
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 30px;
+}
+ol li:first-of-type ul li{
+    list-style: '- ';
+}
