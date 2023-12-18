@@ -1,0 +1,40 @@
+*{
+    margin: 0; padding: 0;
+}
+header{
+    background-color: pink;
+}
+aside{
+    background-color: yellow;
+}
+section{
+    background-color: green;
+}
+footer{
+    background-color: tomato;
+}
+body{
+    width: 1000px; margin: 0 auto;
+    background-color: rgb(245, 198, 138);
+}
+.wrap{
+    margin-bottom: 100px;
+}
+.wrap:after{
+    content: ''; display: block; clear: both;
+}
+aside{
+    float: left; width: 300px;
+    height: 700px;
+}
+section{
+    float: left; width: 700px;
+    height: 700px;
+}
+
+/* 
+* 1. 100%
+* 2. 공간 무너지지 않게
+*/
+
+
