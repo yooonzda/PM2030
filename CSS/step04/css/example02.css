@@ -1,3 +1,9 @@
 *{
     margin: 0; padding: 0;
 }
+body{
+    width: 1660px; margin: 0 auto;
+}
+img{
+    width: 100%;
+}
