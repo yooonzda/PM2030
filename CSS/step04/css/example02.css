@@ -1,9 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
 *{
     margin: 0; padding: 0;
+    font-family: 'Roboto';
 }
 body{
-    width: 1660px; margin: 0 auto;
+    width: 80%; margin: 0 auto; padding: 300px 0;
+    /* (1920 - 1660)/2 */
 }
 img{
-    width: 100%;
+    width: 100%; margin-bottom: 45px;
+}
+h1,
+dl dt,
+dl dd:first-of-type{
+    color: #000;
+}
+h1{
+    font-size: 100px;
+    font-weight: 100;
+    margin-bottom: 110px;
+}
+ul:after{
+    content: ''; display: block; clear: both;
+}
+ul li{
+    float: left;
+    display: block;
+    width: 30%;
+}
+/* ul li:nth-of-type(2),
+ul li:nth-of-type(3),
+ul li:nth-of-type(5),
+ul li:nth-of-type(6),
+ul li:nth-of-type(8){
+    margin-left: 125px;
+} */
+/* ul li:nth-of-type(1),
+ul li:nth-of-type(2),
+ul li:nth-of-type(4),
+ul li:nth-of-type(5),
+ul li:nth-of-type(7),
+ul li:nth-of-type(8){
+    margin-right: 5%;
+} */
+ul li:not(:nth-of-type(3n)){
+    margin-right: 5%;
+}
+/* ul li:nth-of-type(1),
+ul li:nth-of-type(2),
+ul li:nth-of-type(3),
+ul li:nth-of-type(4),
+ul li:nth-of-type(5),
+ul li:nth-of-type(6){
+    margin-bottom: 120px;
+} */
+ul li:not(:nth-of-type(7),:nth-of-type(8)){
+    margin-bottom: 120px;
+}
+dl{
+    font-weight: 400;
+}
+dl dt{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+dl dd:first-of-type{
+    font-size: 25px;
+    margin-bottom: 75px;
+}
+dl dd:last-of-type{
+    font-size: 28px;
+    color: #670d55;
 }
