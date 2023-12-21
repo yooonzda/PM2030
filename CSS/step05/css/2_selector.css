@@ -1,0 +1,72 @@
+.tagSelector h1{
+    color: green; font-size: 20px;
+}
+.tagSelector p{
+    color: blue; font-size: 15px;
+}
+.tagSelector span{
+    color: purple; font-size: 13px;
+}
+/* 태그선택자 */
+
+.idSelector p#paragraph1{
+    text-decoration: underline;
+}
+.idSelector p#paragraph2{
+    text-decoration: line-through;
+}
+.idSelector p#paragraph3{
+    text-decoration: overline;
+}
+/* ID선택자 */
+.classSelector p.f_size{
+    font-size: 20px;
+}
+.classSelector p.f_weight{
+    font-weight: 700;
+}
+.classSelector p.f_color{
+    color: blue;
+}
+/* class선택자 / 다중 클래스  */
+
+.attrSelector fieldset{
+    border: 1px solid #555; background-color: slateblue;
+}
+.attrSelector fieldset legend{
+    border: 1px solid slateblue;
+    background-color: #555;
+    color: #fff;
+}
+.attrSelector fieldset ul{
+    margin: 0; padding: 0; list-style: none;
+}
+.attrSelector fieldset ul li{
+    font-size: 14px; color: #fff; line-height: 30px;
+}
+.attrSelector fieldset ul li label{
+    width: 100px; display: inline-block;
+}
+.attrSelector fieldset ul li input{
+    padding: 5px; vertical-align: middle;
+}
+.attrSelector fieldset ul li input[type='text']{
+    background-color: salmon; border: 3px solid gray;
+}
+.attrSelector fieldset ul li input[type='password']{
+    background-color: lightgreen; border: 3px solid green;
+}
+.attrSelector fieldset ul li input[type='radio']{
+    width: 30px; height: 30px;
+}
+.attrSelector fieldset ul li input[type='checkbox']{
+    width: 50px; height: 50px;
+}
+/* 속성별 선택자 */
+
+.directSelector >h1{
+    font-size: 20px; color: blue;
+}
+.directSelector >span{
+    font-size: 30px; color: magenta;
+}

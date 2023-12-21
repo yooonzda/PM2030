@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+article{
+    margin-bottom: 30px; overflow: hidden;
+}
+article>:first-child{
+    font-size: 200px; line-height: 140px; width: 40%;
+    background-color: gray; color: white;
+}
+article:nth-of-type(2n+1) >:first-child{
+    text-align: right; float: right; margin: 0 0 0 20px;
+}
+article:nth-of-type(2n)>:first-child{
+    text-align: left; float: left; margin: 0 20px 0 0;
+}
+article p mark{
+    background-color: transparent;
+}
+article p *{
+    color: blue;
+}
+article p *:not(mark){
+    text-decoration: underline;
+}
