@@ -30,10 +30,9 @@ aside nav ul li{
     /* display: block; */
     text-align: center;
 }
-aside nav ul li:nth-of-type(1),
-aside nav ul li:nth-of-type(2),
-aside nav ul li:nth-of-type(3),
-aside nav ul li:nth-of-type(4){margin-bottom: 20px;}
+aside nav ul li:not(:last-child){margin-bottom: 20px;}
+aside nav ul li:not(:nth-of-type(5)){margin-bottom: 20px;}
+aside nav ul li:not(:last-of-type){margin-bottom: 20px;}
 aside nav ul li a{
     text-decoration: none;
     color: green;
