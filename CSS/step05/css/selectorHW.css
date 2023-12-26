@@ -4,8 +4,11 @@ body{
 ul{
     padding: 0; list-style: none;
 }
-ul li:first-child{
+ul li:first-child,
+ul li:last-child{
     border-bottom: 1px solid magenta;
+}
+ul li:first-child{
     background-color: #555;
 }
 ul li:first-child span:not(:nth-of-type(2)){
@@ -14,18 +17,81 @@ ul li:first-child span:not(:nth-of-type(2)){
 ul li:first-child span:nth-of-type(2){
     color: greenyellow;
 }
-ul li:nth-of-type(2){
+ul li:nth-of-type(2n){
     background-color: #eee;
 }
-ul li:nth-of-type(2) span:not(:nth-of-type(2)){
+ul li:not(:first-child) span:not(:nth-of-type(2)){
     color: #555;
 }
-ul li:nth-of-type(2) span:nth-of-type(2){
+ul li:not(:first-child) span:nth-of-type(2){
     color: darkorange;
 }
-ul li:nth-of-type(2):hover{
+ul li:nth-of-type(2n):hover{
     background-color: darkorange;
 }
-ul li:nth-of-type(2):hover span:nth-of-type(2){
+ul li:nth-of-type(2n):hover span:nth-of-type(2){
     color: white;
 }
+ul li:nth-of-type(2n+3){
+    background-color: #ddd;
+}
+ul li:nth-of-type(2n+3):hover{
+    background-color: darkblue;
+}
+ul li:after{
+    content: ''; display: block; clear: both;
+}
+ul li span{
+    display: block;
+    float: left;
+    padding: 15px 2%; box-sizing: border-box;
+}
+ul li span:nth-child(2n+1){
+    width: 15%;
+}
+ul li span:nth-child(2){
+    width: 50%;
+}
+ul li span:nth-child(4){
+    width: 20%;
+}
+body>div{
+    position: relative;
+    width: 50%; margin: 0 auto 30px; padding: 0 4%;
+}
+body>div a{
+    text-decoration: none; color: #555; display: block; text-align: center;
+}
+body>div>a{
+    position: absolute; width: 4%; 
+}
+body>div>a:first-of-type{
+    left: 0;
+}
+body>div>a:last-of-type{
+    right: 0;
+}
+body>div>ol{
+    padding: 0; margin: 0;
+}
+body>div>ol:after{
+    content: ''; display: block; clear: both;
+}
+body>div>ol li{
+    float: left; display: block; width: 9%;
+}
+body>div>ol li:not(:first-of-type){
+    margin-left: 1.11%;
+}
+body>div>ol li a:hover{
+    background-color: darkmagenta; color: violet;
+}
+body> form fieldset{
+    border: none; padding: 0; margin: 0; text-align: center;
+}
+body> form fieldset input[type='submit']{
+    border: 1px solid darkmagenta;
+    background-color: aqua; color: darkred;
+    text-transform: uppercase;
+}
+/*  float 100% or 99.99% */
