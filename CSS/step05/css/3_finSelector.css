@@ -1,9 +1,61 @@
-
-
-/* 
-? 공간을 나눌때 
-float / position / flex
-float - content 끼리 100% 차지 할 때
-position - 0 을 사용할 수 있을 때 
-
-*/
+body{
+    width: 80%; margin: 0 auto;
+}
+h1{
+    position: relative;
+    margin: 0; font-size: 30px; color: gray;
+    padding: 20px 50% 20px 0;
+    /* padding-right: 50%; */
+}
+h1 a{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    text-align: right;
+    color: green; font-size: 24px;
+}
+form fieldset{
+    position: relative;
+    border-width: 3px 0 1px;
+    border-color: green;
+    border-style: solid none;
+}
+form fieldset input[type='search']{
+    width: 20%;
+    border: 1px solid green;
+    background-color: palegreen;
+}
+form fieldset input[type='button']{
+    width: 10%;
+    background-color: darkolivegreen;
+    color: white;
+    border: 2px solid limegreen;
+    min-width: 60px;
+}
+form fieldset select{
+    position: absolute;
+    right: 0;
+    background-color: lightseagreen;
+    width: 25%;
+    padding: 4px 0;
+    min-width: 145px;
+}
+h2{
+    margin: 0; padding: 30px 0;
+    color: #555;
+    /* 
+    0~f (0 1 2 3 4 5 6 7 8 9 a b c d e f)
+    6자리
+    000000 = 000
+    ffffff = fff    
+    */
+}
+h2 strong{
+    color: lightsalmon;
+}
+h2 strong:not(:nth-of-type(2)){
+    text-transform: capitalize;
+}
+h2 strong:nth-of-type(2){
+    text-transform: uppercase;
+}
