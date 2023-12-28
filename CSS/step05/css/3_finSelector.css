@@ -59,3 +59,67 @@ h2 strong:not(:nth-of-type(2)){
 h2 strong:nth-of-type(2){
     text-transform: uppercase;
 }
+ul{
+    padding: 0;
+    margin: 0 0 30px;
+    list-style: none;
+}
+ul li:first-of-type{
+    border-width: 3px 0 1px;
+    border-style: solid none;
+    border-color: darkmagenta;
+    padding: 10px 0;
+}
+ul li:not(:first-of-type){
+    border-bottom: 1px solid magenta;
+    position: relative;
+}
+ul li:nth-of-type(2n){
+    background-color: #ccc;
+}
+ul li:after{
+    content: ''; display: block; clear: both;
+}
+ul li span{
+    display: block;
+    float: left;
+    font-size: 14px;
+    padding: 10px 2.5%;
+}
+ul li span:not(:nth-of-type(2)){
+    width: 15%;
+}
+ul li span:nth-of-type(2){
+    width: 35%;
+}
+ul li mark{
+    position: absolute;
+    right: 0; top: 0;
+    font-size: 9px;
+    background-color: rgba(0, 255, 0, 0.5);
+    /* opacity 백분지수*/
+}
+body>div{
+    position: relative;
+    width: 30%; margin: 0 auto;
+}
+body>div>a{
+    position: absolute; top: 0;
+    display: block; font-size: 14px; padding: 5px;
+    text-decoration: none;
+}
+body>div>a:first-of-type{
+    left: 0;
+}
+body>div>a:last-of-type{
+    right: 0;
+}
+body>div ol{
+    padding: 0 25px;
+    margin: 0;
+    text-align: center;
+}
+body>div ol li{
+    display: inline-block;
+    /* 디자인 공간이 확보되어 있을 때 */
+}
