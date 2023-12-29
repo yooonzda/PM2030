@@ -9,16 +9,19 @@ body{
     background: linear-gradient(to bottom, #7db9f8 0%, #1e5799 100%);
     position: absolute;
     animation-name: moveCircle;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    /* animation-direction: alternate; */
 }
 @keyframes moveCircle{
-    from{
+    0%{
         left: 0; transform: rotate(0deg);
     }
-    to{
+    50%{
         left: 600px; transform: rotate(360deg);
+    }
+    100%{
+        left: 0; transform: rotate(0deg);
     }
 }
 .circle:hover{
