@@ -1,0 +1,43 @@
+body{
+    width: 200px;
+    margin: 200px auto;
+}
+div{
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation-name: rotate3D;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+div span{
+    display: block;
+    width: 200px;
+    height: 100px;
+    position: absolute; left: 0; top: 0;
+}
+div span:nth-of-type(1){background-color: red;}
+div span:nth-of-type(2){
+    background-color: green;
+    transform-origin: left top;
+    transform: rotateY(60deg);
+    /* 
+    * 기준점 바꾸기
+    * 회전 축 정하기
+    * 회전 할 각도 정하기
+    */
+}
+div span:nth-of-type(3){
+    background-color: blue;
+    transform-origin: right;
+    transform: rotateY(-60deg);
+}
+
+@keyframes rotate3D{
+    from{
+        transform: rotate3d(0,0,0,0deg);
+    }to{
+        transform: rotate3d(1,1,1,360deg);
+    }
+}
