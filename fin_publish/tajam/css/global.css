@@ -1,0 +1,13 @@
+
+
+
+
+@media screen and (min-width: 1280px){
+    header{
+        background-image: url('../images/bg_01.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+    }
+}
+/* desktop */
