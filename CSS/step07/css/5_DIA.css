@@ -37,5 +37,11 @@ div span:nth-of-type(4){
     background-color: yellow;
     transform: rotateY(270deg) translateZ(100px);
 }
-div span:nth-of-type(5){height: 200px; background-color: pink;}
-div span:nth-of-type(6){height: 200px; background-color: purple;}
+div span:nth-of-type(5){
+    height: 200px; background-color: pink;
+    transform: rotateX(90deg) translateZ(100px);
+}
+div span:nth-of-type(6){
+    height: 200px; background-color: purple;
+    transform: rotateX(270deg);
+}
