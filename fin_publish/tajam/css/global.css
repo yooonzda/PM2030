@@ -1,6 +1,19 @@
 
+/* ALL USE */
+a{
+    text-decoration: none;
+}
 
-
+header>div nav ul li a,
+header>div>ul li p{
+    font-family: 'Roboto';
+}
+header>div>ul li h2{
+    font-family: 'Playfair Display';
+}
+header>div>ul li a{
+    font-family: 'Hammersmith One';
+}
 
 @media screen and (min-width: 1280px){
     header{
@@ -8,6 +21,94 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left top;
+        padding: 15px 0 70px;
+    }
+    header>div{
+        max-width: 940px; margin: 0 auto;
+        position: relative;
+    }
+    header>div h1{
+        max-width: 128px;
+    }
+    header>div h1 a{
+        display: block;
+    }
+    header>div h1 a img{
+        width: 100%;
+    }
+
+    header>div nav{
+        position: absolute; right: 0; top: 0;
+        width: 100%; padding-left: 130px; box-sizing: border-box;
+    }
+    header>div nav ul{
+        text-align: right;
+    }
+    header>div nav ul li{
+        display: inline-block;
+    }
+    header>div nav ul li:not(:first-of-type){
+        margin-left: 25px;
+    }
+    header>div nav ul li a{
+        font-weight: 900;
+        font-size: 13px;
+        color: #fff;
+        line-height: 50px;
+
+        transition-property: color;
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+    }
+    header>div nav ul li a:hover{
+        color: #00e0d0;
+    }
+
+    header>div>ul{
+        margin-bottom: 127px;
+    }
+    header>div>ul li{
+        display: block; padding-top: 165px;
+    }
+    header>div>ul li h2{
+        font-size: 32px; font-weight: 900; color: #fff;
+        text-align: center;
+
+        padding-bottom: 22px; margin-bottom: 30px;
+        background-image: url('../images/border.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    header>div>ul li p{
+        font-size: 14px; font-weight: 300; line-height: 24px;
+        text-align: center; color: #fff;
+
+        max-width: 775px; margin: 0 auto 50px;
+    }
+    header>div>ul li a{
+        display: block; margin: 0 auto;
+        font-size: 16px; font-weight: 400; color: #00e0d0;
+        border: 1px solid #00e0d0;
+        text-align: center; max-width: 120px; padding: 10px 0;
+    }
+    /* ! a display: inline */
+
+    
+    header>div>ol{
+        text-align: center; margin: 0 auto;
+    }
+    header>div>ol li{
+        display: inline-block;
+    }
+    header>div>ol li a{
+        display: block;
+        width: 10px; height: 10px; border-radius: 50%;
+        text-indent: -9999px;
+        border: 1px solid rgba(255, 255, 255, 0.6); box-sizing: border-box;
+    }
+    header>div>ol li a.active,
+    header>div>ol li a:hover{
+        border-color: #00e0d0; background-color: #00e0d0;
     }
 }
 /* desktop */
