@@ -8,7 +8,8 @@ header>div nav ul li a,
 header>div>ul li p,
 footer>div>div:first-of-type p,
 footer>div>div:not(:first-of-type) h2,
-footer>div>div:nth-of-type(2) address{
+footer>div>div:nth-of-type(2) address,
+footer>div>div:nth-of-type(4){
     font-family: 'Roboto';
 }
 header>div>ul li h2{
@@ -153,7 +154,7 @@ header>div>ul li a{
     footer>div>div:nth-of-type(2) address span:nth-of-type(2){background-image: url('../images/bul_phone.png');}
     
     footer>div>div:nth-of-type(3) input{
-        float: left;
+        float: left; margin-bottom: 25px;
     }
     footer>div>div:nth-of-type(3) input[type='email']{
         display: block;
@@ -177,6 +178,39 @@ header>div>ul li a{
     }
     footer>div>div:nth-of-type(3) ul{
         clear: left;
+    }
+    footer>div>div:nth-of-type(3) ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    footer>div>div:nth-of-type(3) ul li:not(:first-of-type){
+        margin-left: 8px;
+    }
+    footer>div>div:nth-of-type(3) ul li a{
+        text-indent: -9999px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(1) a{background-image: url('../images/ico_sns_01.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(2) a{background-image: url('../images/ico_sns_02.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(3) a{background-image: url('../images/ico_sns_03.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(4) a{background-image: url('../images/ico_sns_04.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(5) a{background-image: url('../images/ico_sns_05.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(6) a{background-image: url('../images/ico_sns_06.png');}
+
+    footer>div>div:nth-of-type(4){
+        clear: left;
+        font-size: 14px; font-weight: 400; line-height: 26px; color: #fff;
+    }
+    footer>div>div:nth-of-type(4) a{
+        color: #fff;
+        display: inline-block;
+    }
+    footer>div>div:nth-of-type(4) a:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer>div>div:nth-of-type(4) p{
+        float: right;
     }
 }
 /* desktop */
