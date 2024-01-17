@@ -5,4 +5,45 @@
     #about{
         max-width: 940px; margin: 0 auto; padding: 70px 0 70px 4%;
     }
+    /* 
+        * image 235px -> 20% -> 25% max-width: 235px
+        ! margin 100px -> 10% -> 15%
+        ? figure 543px -> 50% -> 60%
+    */
+    #about:after{
+        content: ''; display: block; clear: both;
+    }
+    #about img{
+        float: left; width: 25%; max-width: 235px;
+    }
+    #about figcaption{
+        float: left; width: 60%; margin-left: 15%;
+    }
+    #about figcaption h2{
+        font-size: 22px; font-weight: 700; color: #413d4b;
+        margin-bottom: 15px;
+    }
+    #about figcaption p{
+        font-size: 14px; font-weight: 300; color: rgba(65, 61, 75, 0.75);
+        line-height: 22px; margin-bottom: 25px;
+    }
+    #about figcaption a{
+        max-width: 120px;
+    }
+    section.videoContainer{
+        background: url('../images/bg_02.png') left top / cover no-repeat;
+        padding: 200px 0;
+    }
+    section.videoContainer a{
+        display: block; 
+        width: 100px;
+        color: #fff;
+        margin: 0 auto;
+        text-align: center;
+        border: 3px solid #fff;
+        border-radius: 50px;
+        box-sizing: border-box;
+        padding: 20px 0;
+        font-size: 45px;
+    }
 }
