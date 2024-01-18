@@ -7,6 +7,8 @@ a{
 header>div nav ul li a,
 header>div>ul li p,
 #about figcaption p,
+section.videoContainer h2,
+section.expContainer>ul li,
 footer>div>div:first-of-type p,
 footer>div>div:not(:first-of-type) h2,
 footer>div>div:nth-of-type(2) address,
@@ -14,7 +16,9 @@ footer>div>div:nth-of-type(4){
     font-family: 'Roboto';
 }
 header>div>ul li h2,
-#about figcaption h2{
+#about figcaption h2,
+section.expContainer>h2,
+section.expContainer>p{
     font-family: 'Playfair Display';
 }
 .btn_more{
