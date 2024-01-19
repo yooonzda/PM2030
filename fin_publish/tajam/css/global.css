@@ -9,6 +9,8 @@ header>div>ul li p,
 #about figcaption p,
 section.videoContainer h2,
 section.expContainer>ul li,
+section.teamContainer>ul li figure figcaption,
+section.teamContainer>ul+p,
 footer>div>div:first-of-type p,
 footer>div>div:not(:first-of-type) h2,
 footer>div>div:nth-of-type(2) address,
@@ -18,7 +20,9 @@ footer>div>div:nth-of-type(4){
 header>div>ul li h2,
 #about figcaption h2,
 section.expContainer>h2,
-section.expContainer>p{
+section.expContainer>p,
+section.teamContainer h2,
+section.teamContainer>p:first-of-type{
     font-family: 'Playfair Display';
 }
 .btn_more{
@@ -33,6 +37,11 @@ section.expContainer>p{
     border: 1px solid #00e0d0;
     text-align: center; 
     padding: 10px 0;
+}
+hr{
+    border-style: solid;
+    border-width: 2px 0 0;
+    width: 50px; margin: 0 auto 50px;
 }
 
 @media screen and (min-width: 1280px){

@@ -64,11 +64,7 @@
         margin-bottom: 15px;
     }
     section.expContainer>hr{
-        border-width: 2px 0 0;
-        border-style: solid;
         border-color: rgba(65, 61, 75, 0.3);
-
-        width: 50px; margin: 0 auto 50px;
     }
     section.expContainer>ul:after{
         content: ''; display: block; clear: both;
@@ -87,7 +83,6 @@
     section.expContainer>ul li:nth-of-type(5){background-image: url('../images/ico_05.png');}
     section.expContainer>ul li:nth-of-type(6){background-image: url('../images/ico_06.png');}
     
-    
     section.expContainer>ul li:not(:nth-of-type(3n)){
         border-right: 1px solid #ebebeb;
     }
@@ -99,8 +94,6 @@
         border-top: 1px solid #ebebeb;
     }
 
-
-
     section.expContainer>ul li h3{
         font-size: 14px; font-weight: 900; color: #413d4b;
         margin-bottom: 15px;
@@ -108,5 +101,98 @@
     section.expContainer>ul li p{
         font-size: 14px; font-weight: 300; color: rgba(65, 61, 75, 0.75);
         line-height: 22px;
+    }
+
+    section.teamContainer{
+        background-image: url('../images/bg_04.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+        padding: 70px 0;
+        text-align: center; color: #fff;
+    }
+    section.teamContainer h2{
+        font-size: 22px; font-weight: 700;
+        margin-bottom: 15px;
+    }
+    section.teamContainer>p{
+        font-size: 14px;
+    }
+    section.teamContainer>p:first-of-type{
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    section.teamContainer>hr{
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    section.teamContainer>ul{
+        max-width: 940px; margin: 0 auto 70px;
+    }
+    section.teamContainer>ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.teamContainer>ul li{
+        float: left; display: block; width: 23.5%;
+    }
+    section.teamContainer>ul li:not(:first-of-type){
+        margin-left: 2%;
+    }
+    /* 
+        * margin 의 %를 먼저 결정 
+        * 20px -> 2.12% -> 2%
+        * li 94/4 -> 23.5%    
+    */
+    section.teamContainer>ul li figure{
+        padding-top: 230px;
+        background-image: url('https://via.placeholder.com/220X230');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center top;
+    }
+    section.teamContainer>ul li figure figcaption{
+        padding: 20px 0;
+        border: 1px solid rgba(215, 215, 217, 0.5);
+    }
+    section.teamContainer>ul li figure figcaption dl dt{
+        font-size: 14px; font-weight: 900; margin-bottom: 5px;
+    }
+    section.teamContainer>ul li figure figcaption dl dd{
+        font-size: 13px; font-weight: 300;
+    }
+    section.teamContainer>ul+p{
+        font-weight: 300; margin-bottom: 30px;
+    }
+    section.teamContainer>a{
+        margin: 0 auto; max-width: 140px;
+    }
+    section.worksContainer{
+        padding: 70px 0;
+    }
+    section.worksContainer h2{
+        max-width: 940px; margin: 0 auto 70px;
+        position: relative;
+        font-size: 22px; font-weight: 700; color: #413d4b;
+    }
+    section.worksContainer h2 a{
+        position: absolute; right: 0; top: 8px;
+        font-size: 14px; font-weight: 300; color: #413d4b;
+    }
+    section.worksContainer ul{
+        margin-bottom: 70px;
+    }
+    section.worksContainer ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.worksContainer ul li{
+        width: 16.666%; float: left; display: block;
+    }
+    section.worksContainer ul li a{
+        display: block;
+    }
+    section.worksContainer ul li a img{
+        width: 100%; display: block;
+    }
+    section.worksContainer>a{
+        max-width: 140px; margin: 0 auto;
     }
 }
