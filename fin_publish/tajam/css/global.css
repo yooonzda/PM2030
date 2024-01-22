@@ -11,6 +11,7 @@ section.videoContainer h2,
 section.expContainer>ul li,
 section.teamContainer>ul li figure figcaption,
 section.teamContainer>ul+p,
+section.talkContainer p strong,
 footer>div>div:first-of-type p,
 footer>div>div:not(:first-of-type) h2,
 footer>div>div:nth-of-type(2) address,
@@ -22,7 +23,10 @@ header>div>ul li h2,
 section.expContainer>h2,
 section.expContainer>p,
 section.teamContainer h2,
-section.teamContainer>p:first-of-type{
+section.teamContainer>p:first-of-type,
+section.talkContainer p,
+section.contactContainer form fieldset legend,
+section.contactContainer div h3{
     font-family: 'Playfair Display';
 }
 .btn_more{

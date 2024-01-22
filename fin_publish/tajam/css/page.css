@@ -195,4 +195,106 @@
     section.worksContainer>a{
         max-width: 140px; margin: 0 auto;
     }
+
+    section.talkContainer{
+        background-image: url('../images/bg_04.png');
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+
+        padding: 70px 0;
+        text-align: center;
+    }
+    section.talkContainer h2{
+        display: none;
+    }
+    section.talkContainer p{
+        background-image: url('../images/quote.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-top: 70px;
+        max-width: 780px; margin: 0 auto 45px;
+
+        font-size: 16px; font-weight: 400; color: #fff; line-height: 26px;
+    }
+    section.talkContainer p>*{
+        display: block;
+    }
+    section.talkContainer p strong{
+        margin: 40px 0 10px;
+        font-size: 14px; font-weight: 900; line-height: 14px;
+    }
+    section.talkContainer p small{
+        font-size: 13px; font-weight: 300; line-height: 13px;   
+    }
+    section.talkContainer div{
+        width: 400px; position: relative; margin: 0 auto;
+    }
+    section.talkContainer div>a{
+        position: absolute;
+        font-size: 20px; color: rgba(255, 255, 255, 0.5);
+
+        top: 50%; transform: translate(0,-50%);
+    }
+    section.talkContainer div>a:first-of-type{
+        left: 0;
+    }
+    section.talkContainer div>a:last-of-type{
+        right: 0;
+    }
+    section.talkContainer div>ul{
+        padding: 0 40px; box-sizing: border-box;
+    }
+    section.talkContainer div>ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.talkContainer div>ul li{
+        float: left; display: block; width: 19%;
+    }
+    section.talkContainer div>ul li:not(:first-of-type){
+        margin-left: 1.25%;
+    }
+    section.talkContainer div>ul li a{
+        display: block; text-align: center;
+    }
+    section.talkContainer div>ul li.active a,
+    section.talkContainer div>ul li:not(.active):hover a{
+        padding: 0;
+        /* transition: padding 0.3s ease-in-out; */
+    }
+    section.talkContainer div>ul li:not(.active) a{
+        padding: 15px 0;
+    }
+    section.talkContainer div>ul li:not(.active):hover a img,
+    section.talkContainer div>ul li.active a img{
+        width: 100%;
+    }
+    section.talkContainer div>ul li:not(.active) a img{
+        width: 65%; transition: width 0.3s ease-in-out;
+    }
+    /* 
+    * 5 -> 20% -> 19%
+    * margin-left -> 1.25%
+    */
+
+    section.contactContainer{
+        max-width: 940px; padding: 70px 0; margin: 0 auto;
+    }
+    section.contactContainer:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactContainer h2{
+        display: none;
+    }
+    section.contactContainer form fieldset{
+        float: left; width: 50%;
+    }
+    section.contactContainer div{
+        float: left; width: 40%; margin-left: 10%;
+    }
+    section.contactContainer form fieldset legend,
+    section.contactContainer div h3{
+        font-size: 22px; font-weight: 700;
+        color: #413d4b; margin-bottom: 35px;
+    }
 }
