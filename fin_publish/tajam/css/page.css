@@ -250,6 +250,7 @@
     }
     section.talkContainer div>ul li{
         float: left; display: block; width: 19%;
+        transition: padding 0.3s ease-in-out;
     }
     section.talkContainer div>ul li:not(:first-of-type){
         margin-left: 1.25%;
@@ -257,20 +258,22 @@
     section.talkContainer div>ul li a{
         display: block; text-align: center;
     }
-    section.talkContainer div>ul li.active a,
-    section.talkContainer div>ul li:not(.active):hover a{
+    section.talkContainer div>ul li.active,
+    section.talkContainer div>ul li:not(.active):hover{
         padding: 0;
-        /* transition: padding 0.3s ease-in-out; */
     }
-    section.talkContainer div>ul li:not(.active) a{
+    section.talkContainer div>ul li:not(.active){
         padding: 15px 0;
+    }
+    section.talkContainer div>ul li a img{
+        transition: width 0.3s ease-in-out;
     }
     section.talkContainer div>ul li:not(.active):hover a img,
     section.talkContainer div>ul li.active a img{
         width: 100%;
     }
     section.talkContainer div>ul li:not(.active) a img{
-        width: 65%; transition: width 0.3s ease-in-out;
+        width: 65%; 
     }
     /* 
     * 5 -> 20% -> 19%
@@ -297,4 +300,41 @@
         font-size: 22px; font-weight: 700;
         color: #413d4b; margin-bottom: 35px;
     }
+    
+    section.contactContainer form fieldset textarea,
+    section.contactContainer form fieldset input[type='text'],
+    section.contactContainer form fieldset input[type='email']{
+        display: block; width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        padding: 12px 20px;
+
+        font-size: 14px; font-weight: 300;
+        margin-bottom: 20px;
+    }
+    section.contactContainer form fieldset textarea{
+        resize: none; height: 200px;
+    }
+    /* input display -> inline-block */
+    section.contactContainer form fieldset input::placeholder,
+    section.contactContainer form fieldset textarea::placeholder{
+        color: rgba(65, 61, 75, 0.5);
+    }
+    section.contactContainer form fieldset input[type='submit']{
+        display: block; width: 100%;
+        max-width: 120px; background-color: transparent;
+    }
+    section.contactContainer div ul:after{
+        content: ''; display: block; clear: both;
+    }
+    section.contactContainer div ul li{
+        float: left; width: 50%; display: block;
+    }
+    section.contactContainer div ul li a{
+        display: block;
+    }
+    section.contactContainer div ul li a img{
+        width: 100%; max-width: 162px;
+    }
 }
+/* desk fin */
