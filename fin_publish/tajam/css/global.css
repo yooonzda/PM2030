@@ -9,6 +9,7 @@ header>div>ul li p,
 #about figcaption p,
 section.videoContainer h2,
 section.expContainer>ul li,
+section.worksContainer h2 a,
 section.teamContainer>ul li figure figcaption,
 section.teamContainer>ul+p,
 section.talkContainer p strong,
@@ -22,6 +23,7 @@ header>div>ul li h2,
 #about figcaption h2,
 section.expContainer>h2,
 section.expContainer>p,
+section.worksContainer h2,
 section.teamContainer h2,
 section.teamContainer>p:first-of-type,
 section.talkContainer p,
@@ -264,7 +266,7 @@ hr{
     }
     footer>div>div:nth-of-type(4) a:not(:first-of-type){
         margin-left: 5.5%;
-    }
+    } 
     /* footer>div>div:nth-of-type(4) p{
         float: right;
     } */
