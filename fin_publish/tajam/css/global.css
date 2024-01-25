@@ -351,12 +351,12 @@ hr{
     footer>div{
         max-width: 940px; margin: 0 auto; padding: 70px 0;
     }
-    /* footer>div>div:not(:last-of-type){
+    footer>div>div:not(:last-of-type){
         float: left; width: 32%; margin: 0 0 70px 2%;
     }
     footer>div>div:first-of-type{
         margin-left: 0;
-    } */
+    }
     footer>div>div h2{
         margin-bottom: 20px;
     }
