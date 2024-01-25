@@ -48,7 +48,233 @@ hr{
     width: 50px; margin: 0 auto 50px;
 }
 
+@media screen and (max-width: 767px){
+    header{
+        background-image: url('../images/bg_01.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        padding: 15px 0 70px;
+    }
+    header>div{
+        max-width: 600px; margin: 0 auto; padding: 0 3%;
+        /* position: relative; */
+        /* * Gutter -> padding 3% */
+    }
+    header>div h1{
+        max-width: 128px;
+        /* position: absolute; top: 0; left: 0; z-index: 1; */
+        width: 35%; float: left;
+    }
+    header>div h1 a{
+        display: block;
+    }
+    header>div h1 a img{
+        width: 100%;
+    }
+
+    header>div nav{
+        width: 100%; text-align: right;
+        /* position: absolute; right: 0; top: 0; */
+        /* padding-left: 130px; box-sizing: border-box; */
+    }
+    header>div nav label.mui{
+        border: 1px solid white;
+        width: 22px; padding: 5px 3px;
+        display: block;
+        margin: 5px 0 0 auto;
+    }
+    header>div nav label.mui span{
+        border-top: 2px solid white; display: block;
+    }
+    header>div nav label.mui span:not(:last-of-type){
+        margin-bottom: 3px;
+    }
+    header>div nav input[type='checkbox'].mui{
+        display: none;
+    }
+
+
+    header>div nav ul{
+        height: 0; overflow: hidden;
+        transition: height 1s ease-in-out;
+    }
+    header>div nav input[type='checkbox'].mui:checked+ul{
+        height: 350px;  
+    } 
+    header>div nav ul li{
+        display: block;
+    }
+    /* header>div nav ul li:not(:first-of-type){
+        margin-left: 2.65%;
+    } */
+    header>div nav ul li a{
+        font-weight: 900;
+        font-size: 13px;
+        color: #fff;
+        line-height: 50px;
+
+        transition-property: color;
+        transition-duration: .3s;
+        transition-timing-function: ease-out;
+    }
+    header>div nav ul li a:hover{
+        color: #00e0d0;
+    }
+
+    header>div>ul{
+        margin-bottom: 127px;
+    }
+    header>div>ul li{
+        display: block; padding-top: 55px;
+    }
+    header>div>ul li h2{
+        font-size: 32px; font-weight: 900; color: #fff;
+        text-align: center;
+
+        padding-bottom: 22px; margin-bottom: 30px;
+        background-image: url('../images/border.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+    header>div>ul li p{
+        font-size: 14px; font-weight: 300; line-height: 24px;
+        text-align: center; color: #fff;
+
+        max-width: 775px; margin: 0 auto 50px;
+    }
+    header>div>ul li a{
+        max-width: 120px; margin: 0 auto; 
+    }
+    /* ! a display: inline */
+
+    
+    header>div>ol{
+        text-align: center; margin: 0 auto;
+    }
+    header>div>ol li{
+        display: inline-block;
+    }
+    header>div>ol li a{
+        display: block;
+        width: 10px; height: 10px; border-radius: 50%;
+        text-indent: -9999px;
+        border: 1px solid rgba(255, 255, 255, 0.6); box-sizing: border-box;
+    }
+    header>div>ol li a.active,
+    header>div>ol li a:hover{
+        border-color: #00e0d0; background-color: #00e0d0;
+    }
+    footer{
+        background: url('../images/bg_05.png') left top / cover no-repeat;
+    }
+    footer>div{
+        max-width: 600px; margin: 0 auto; padding: 70px 3%;
+    }
+    /* footer>div>div:nth-of-type(1),
+    footer>div>div:nth-of-type(2){
+        float: left; width: 47.5%; margin: 0 0 70px;
+    }
+    footer>div>div:nth-of-type(2){
+        margin-left: 5%;
+    } */
+    footer>div>div:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    footer>div>div h2{
+        margin-bottom: 20px;
+    }
+    footer>div>div:not(:first-of-type) h2{
+        font-weight: 900; font-size: 15px; line-height: 50px; color: #fff;
+    }
+    footer>div>div:first-of-type p{
+        font-weight: 300; font-size: 14px; line-height: 26px; color: #fff;
+    }
+    footer>div>div:nth-of-type(2) address{
+        font-style: normal;
+        font-weight: 300; font-size: 14px; line-height: 26px; color: #fff;
+    }
+    footer>div>div:nth-of-type(2) address a{
+        color: #fff;
+    }
+    footer>div>div:nth-of-type(2) address span{
+        display: block;
+        padding-left: 30px;
+
+        background-repeat: no-repeat;
+        background-position: left 5px;   
+    }
+    footer>div>div:nth-of-type(2) address span:nth-of-type(1){background-image: url('../images/bul_map.png');}
+    footer>div>div:nth-of-type(2) address span:nth-of-type(2){background-image: url('../images/bul_phone.png');}
+    
+    footer>div>div:nth-of-type(3){
+        clear: left;
+    }
+    footer>div>div:nth-of-type(3) input{
+        float: left; margin-bottom: 25px;
+    }
+    footer>div>div:nth-of-type(3) input[type='email']{
+        display: block;
+        width: 75%;
+        background-color: transparent;
+        padding: 0 15px; line-height: 43px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.7);
+        box-sizing: border-box;
+    }
+    footer>div>div:nth-of-type(3) input[type='submit']{
+        display: block;
+        width: 25%;
+        line-height: 43px; border: none;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-image: url('../images/btn_submit.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        text-indent: -9999px;
+        cursor: pointer;
+    }
+    footer>div>div:nth-of-type(3) ul li{
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    footer>div>div:nth-of-type(3) ul li:not(:first-of-type){
+        /* margin-left: 8px; */
+        margin-left: 1.9%;
+    }
+    footer>div>div:nth-of-type(3) ul li a{
+        text-indent: -9999px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(1) a{background-image: url('../images/ico_sns_01.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(2) a{background-image: url('../images/ico_sns_02.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(3) a{background-image: url('../images/ico_sns_03.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(4) a{background-image: url('../images/ico_sns_04.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(5) a{background-image: url('../images/ico_sns_05.png');}
+    footer>div>div:nth-of-type(3) ul li:nth-of-type(6) a{background-image: url('../images/ico_sns_06.png');}
+
+    footer>div>div:nth-of-type(4){
+        /* clear: left; */
+        font-size: 14px; font-weight: 400; line-height: 26px; color: #fff;
+        text-align: center;
+    }
+    footer>div>div:nth-of-type(4) a{
+        color: #fff;
+        display: inline-block;
+    }
+    footer>div>div:nth-of-type(4) a:not(:first-of-type){
+        margin-left: 5.5%;
+    }
+    /* footer>div>div:nth-of-type(4) p{
+        float: right;
+    } */
+}
+
 @media screen and (min-width: 768px) and (max-width: 1279px){
+    .mui{
+        display: none;
+    }
+
     header{
         background-image: url('../images/bg_01.png');
         background-repeat: no-repeat;
@@ -254,6 +480,10 @@ hr{
 /* tablet global fin */
 
 @media screen and (min-width: 1280px){
+    .mui{
+        display: none;
+    }
+
     header{
         background-image: url('../images/bg_01.png');
         background-repeat: no-repeat;
