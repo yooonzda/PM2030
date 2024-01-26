@@ -3,11 +3,23 @@
     display: none;
 }
 
+#cartEmpty h2{
+    font-family: 'Sono';
+}
+
 header>div:first-of-type a{
     font-family: 'Caveat';
 }
 
-header input{
+#cartEmpty input[type='button']:last-of-type{
+    font-family: 'Saira';
+}
+/* 
+    *material-icon 사용시 font-family X
+*/
+
+header input,
+[class*='panel']>input[type='button']:first-of-type{
     background-color: transparent; border: none; padding: 0; cursor: pointer;
 }
 
@@ -31,5 +43,93 @@ header input{
     header>div:first-of-type input{
         position: absolute; right: 10%; line-height: 40px;
         color: #78776b;
+    }
+    header>div:last-of-type{
+        position: relative; padding: 0 10%; margin: 20px 0;
+    }
+    header>div:last-of-type h1{
+        position: absolute; top: 0; left: 10%;
+        max-width: 131px;
+    }
+    header>div:last-of-type h1 a{
+        display: block;
+    }
+    header>div:last-of-type h1 a img{
+        width: 100%; display: block;
+    }
+    header>div:last-of-type nav ul{
+        text-align: center;
+    }
+    /* 
+        * 부모가 text-align 갖고 자손의 속성이 inline 일때 
+        * width 부여하지 않고 자손의 태그를 움직일 수 있다.
+    */
+    header>div:last-of-type nav ul li{
+        display: inline-block;
+    }
+    header>div:last-of-type nav ul li:not(:first-of-type){
+        margin-left: 1.5%;
+    }
+    header>div:last-of-type nav ul li a{
+        text-decoration: none;
+        color: #78776b;
+        font-size: 16px; font-weight: 400; line-height: 50px;
+    }
+    header>div:last-of-type>ul{
+        position: absolute; top: 0; right: 10%; 
+        padding: 10px 0;
+    }
+    header>div:last-of-type>ul li{
+        display: inline-block;
+    }
+    header>div:last-of-type>ul li:last-of-type{
+        margin-left: 10px;
+    }
+    header>div:last-of-type>ul li *{
+        display: inline-block; vertical-align: middle;
+    }
+    header>div:last-of-type>ul li a{
+        font-size: 16px; font-weight: 400; color: #78776b; text-decoration: none;
+    }
+    header>div:last-of-type>ul li input{
+        color: #78776b; font-size: 30px;
+    }
+    header>div:last-of-type>ul li a span{
+        font-size: 30px;
+    }
+
+    [class*='panel']{
+        position: fixed; z-index: 100; right: 0; top: 0;
+        width: 35%; height: 100%; background-color: #e5e3cb;
+        padding: 80px; box-sizing: border-box;
+    }
+    [class*='panel']>input[type='button']:first-of-type{
+        position: absolute; top: 80px; right: 80px;
+        font-size: 40px; color: #78776b;
+    }
+
+    #cartEmpty{
+        text-align: center;
+        flex-flow: column; justify-content: center;
+    }
+    #cartEmpty.active{
+        display: flex;
+        /* 수직정렬에 강함 / height 필수 / background-imgae */
+    }
+    #cartEmpty>*:not(input:first-of-type){
+        color: #524b0b;
+    }
+    #cartEmpty h2{
+        font-size: 25px; font-weight: 400;
+        margin-bottom: 20px;
+    }
+    #cartEmpty p{
+        font-size: 15px; font-weight: 500;
+        max-width: 430px; margin: 0 auto 20px;
+    }
+    #cartEmpty input[type='button']:last-of-type{
+        background-color: #ccc991; line-height: 54px;
+        border: none; width: 100%; max-width: 500px; margin: 0 auto;
+        font-size: 20px; font-weight: 500;
     }
 }
