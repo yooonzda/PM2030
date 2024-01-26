@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADUREE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartHave" class="panel cartHave">
+        <input type="button" value="close" class="material-symbols-outlined" data-panelName="cartHave">
+        <ul>
+            <li>
+                <div>
+                    <dl>
+                        <dt>COFFRET DE 42 MACARONS "NUIT"</dt>
+                        <dd>Coffret à composer</dd>
+                    </dl>
+                    <input type="button" value="delete" class="material-symbols-outlined" data-panelName="cartEmpty">
+                </div>
+                <div>
+                    <div>
+                        <input type="button" value="-">
+                        <span>1</span>
+                        <input type="button" value="+">
+                    </div>
+                    <mark>112,00 €</mark>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <strong>TOTAL</strong>
+            <output>112,00</output>€
+            <a href="pageCart.html">COMMANDER</a>
+        </div>
+    </div>
+    <div id="cartEmpty" class="panel cartEmpty">
+        <input type="button" value="close" class="material-symbols-outlined" data-panelName="cartEmpty">
+        <h2>Votre panier est vide</h2>
+        <p>Identifiez-vous pour retrouver votre panier enregistré, ou poursuivez vos achats sur le site</p>
+        <input type="button" value="POURSUIVRE MES ACHATS" data-panelName="cartEmpty">
+    </div>
+    <header>
+        <div class="active">
+            <a href="listPage01.html">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</a>
+            <input type="button" value="close" class="material-symbols-outlined">
+        </div>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to laduree">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="listPage01.html">NOËL</a></li>
+                    <li><a href="listPage02.html">MACARONS</a></li>
+                    <li><a href="listPage03.html">PÂTISSERIES</a></li>
+                    <li><a href="listPage04.html">EPICERIE FINE</a></li>
+                    <li><a href="listPage05.html">VIENNOISERIES</a></li>
+                    <li><a href="listPage06.html">CADEAUX</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <a href="myPage.html">
+                        Alan
+                        <span class="material-symbols-outlined">person</span>
+                    </a>
+                </li>
+                <li><input type="button" value="shopping_bag" class="material-symbols-outlined" data-panelName="cartHave"></li>
+            </ul>
+        </div>
+    </header>
+    <section class="listContainer type02">
+        <div class="titleBox list04">
+            <h2>
+                EPICERIE FINE
+                <small>Thés Signature</small>
+            </h2>
+        </div>
+        <div>
+            <mark>NOS THÉS SIGNATURE</mark>
+            <p>Du thé emblématique Marie-Antoinette au thé création Jardin Bleu Royal... Voyagez dans l’univers du salon de thé Maison Ladurée avec nos élégantes associations, dans des écrins hauts en couleurs.</p>
+            <select>
+                <option>Trier par</option>
+                <option>Du - au + cher</option>
+                <option>Du + au - cher</option>
+                <option>Recommandation</option>
+            </select>
+            <ul class="itemSlot">
+                <li>
+                    <img src="images/item19.png" alt="THÉ MARIE ANTOINETTE title image">
+                    <b>THÉ MARIE ANTOINETTE</b>
+                    <small>Thé noir de Chine accompagné</small>
+                    <mark>22,00 €</mark>
+                    <div>
+                        <a href="detailPage.html">En savoir pluss</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/item20.png" alt="THÉ JARDIN BLEU ROYAL title image">
+                    <b>THÉ JARDIN BLEU ROYAL</b>
+                    <small>Thé noir floral et fruité</small>
+                    <mark>22,00 €</mark>
+                    <div>
+                        <a href="detailPage.html">En savoir pluss</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/item21.png" alt="THÉ ROI SOLEIL title image">
+                    <b>THÉ ROI SOLEIL</b>
+                    <small>Thé vert aux notes de bergamote</small>
+                    <mark>22,00 €</mark>
+                    <div>
+                        <a href="detailPage.html">En savoir pluss</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/item22.png" alt="THÉ DARJEELING title image">
+                    <b>THÉ DARJEELING</b>
+                    <small>Boîte de 100g</small>
+                    <mark>22,00 €</mark>
+                    <div>
+                        <a href="detailPage.html">En savoir pluss</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/item23.png" alt="BREAKFAST TEA title image">
+                    <b>BREAKFAST TEA</b>
+                    <small>Thé noir du Sri-Lanka et d'Inde</small>
+                    <mark>22,00 €</mark>
+                    <div>
+                        <a href="detailPage.html">En savoir pluss</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/item24.png" alt="THÉ EARL GREY title image">
+                    <b>THÉ EARL GREY</b>
+                    <small>Thé noir à la bergamote</small>
+                    <mark>22,00 €</mark>
+                    <div>
+                        <a href="detailPage.html">En savoir pluss</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a target="_blank" href="https://www.facebook.com/">facebook</a></li>
+                <li><a target="_blank" href="https://www.instagram.com/">instagram</a></li>
+                <li><a target="_blank" href="https://www.pinterest.co.kr/">pinterest</a></li>
+                <li><a target="_blank" href="https://kr.linkedin.com/">linkedin</a></li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li>delivery icon 01</li>
+                <li>delivery icon 02</li>
+                <li>delivery icon 03</li>
+            </ol>
+            <p>
+                <mark>COMMANDEZ EN TOUTE SÉRÉNITÉ !</mark>
+                © Copyright Ladurée Paris 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

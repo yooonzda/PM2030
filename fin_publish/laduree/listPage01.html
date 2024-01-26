@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LADUREE</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="cartHave" class="panel cartHave">
+        <input type="button" value="close" class="material-symbols-outlined" data-panelName="cartHave">
+        <ul>
+            <li>
+                <div>
+                    <dl>
+                        <dt>COFFRET DE 42 MACARONS "NUIT"</dt>
+                        <dd>Coffret à composer</dd>
+                    </dl>
+                    <input type="button" value="delete" class="material-symbols-outlined" data-panelName="cartEmpty">
+                </div>
+                <div>
+                    <div>
+                        <input type="button" value="-">
+                        <span>1</span>
+                        <input type="button" value="+">
+                    </div>
+                    <mark>112,00 €</mark>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <strong>TOTAL</strong>
+            <output>112,00</output>€
+            <a href="pageCart.html">COMMANDER</a>
+        </div>
+    </div>
+    <div id="cartEmpty" class="panel cartEmpty">
+        <input type="button" value="close" class="material-symbols-outlined" data-panelName="cartEmpty">
+        <h2>Votre panier est vide</h2>
+        <p>Identifiez-vous pour retrouver votre panier enregistré, ou poursuivez vos achats sur le site</p>
+        <input type="button" value="POURSUIVRE MES ACHATS" data-panelName="cartEmpty">
+    </div>
+    <header>
+        <div class="active">
+            <a href="listPage01.html">CALENDRIER DE L'AVENT 2022 | 24 raisons gourmandes de succomber. Commandez le vôtre</a>
+            <input type="button" value="close" class="material-symbols-outlined">
+        </div>
+        <div>
+            <h1>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="welcome to laduree">
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="listPage01.html">NOËL</a></li>
+                    <li><a href="listPage02.html">MACARONS</a></li>
+                    <li><a href="listPage03.html">PÂTISSERIES</a></li>
+                    <li><a href="listPage04.html">EPICERIE FINE</a></li>
+                    <li><a href="listPage05.html">VIENNOISERIES</a></li>
+                    <li><a href="listPage06.html">CADEAUX</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li>
+                    <a href="myPage.html">
+                        Alan
+                        <span class="material-symbols-outlined">person</span>
+                    </a>
+                </li>
+                <li><input type="button" value="shopping_bag" class="material-symbols-outlined" data-panelName="cartHave"></li>
+            </ul>
+        </div>
+    </header>
+    <section class="listContainer type01">
+        <div class="titleBox list01">
+            <h2>UN NOËL CÉLESTE</h2>
+            <p>Notre collection exclusive se pare élégamment de bleu roi parsemé de brillants, pour célébrer les fêtes en majesté. Un hommage vibrant à une marque née rue Royale et devenue souveraine. Somptueux coffrets de macarons, créations d'exception et cadeaux gourmands : préparez-vous, ce Noël, à faire briller les yeux de vos proches.</p>
+        </div>
+        <ul>
+            <li>
+                <img src="images/listPage01_01.png" alt="title image">
+                <div>
+                    <h3>Notre Noël spécial</h3>
+                    <p>Quel genre de Noël êtes-vous en train de préparer ? Joyeux Noël, coloriez-le avec douceur. Ladurée se joint à vous pour Noël.</p>
+                    <a href="detailPage.html">DÉCOUVRIR</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/listPage01_02.png" alt="title image">
+                <div>
+                    <h3>CALENDRIER DE L'AVENT 2022</h3>
+                    <p>Découvrez sous chacune de ses 24 cases, les douceurs d'exception qui s’y sont cachées. Calissons ? Confitures? Chocolats ? Cette année, l’attente jusqu'à Noël n’aura jamais été aussi gourmande et raffinée.</p>
+                    <a href="detailPage.html">DÉCOUVRIR</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/listPage01_03.png" alt="title image">
+                <div>
+                    <h3>préparation de Noël</h3>
+                    <p>Attendez-vous à quelque chose de spécial pour Noël ? Une joyeuse fête rendra Noël encore plus spécial. Je vous bénis avec une pâtisserie qui a rendu votre Noël authentique.</p>
+                    <a href="detailPage.html">DÉCOUVRIR</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/listPage01_04.png" alt="title image">
+                <div>
+                    <h3>Noël pour vous</h3>
+                    <p>Complétez votre boîte de desserts comme pour décorer un sapin de Noël brillant. Cela rendra votre Noël encore plus beau. Rendez-vous maintenant.</p>
+                    <a href="detailPage.html">DÉCOUVRIR</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <div>
+            <h2>Plus d'informations</h2>
+            <ul>
+                <li><a href="pageContact.html">Nous contacter</a></li>
+                <li><a href="pageTermsAndConditions.html">Conditions générales de vente</a></li>
+                <li><a href="pageProtection.html">Protection des données personnelles</a></li>
+                <li><a href="pageFAQ.html">F.A.Q</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>SUIVEZ-NOUS</h2>
+            <ol>
+                <li><a target="_blank" href="https://www.facebook.com/">facebook</a></li>
+                <li><a target="_blank" href="https://www.instagram.com/">instagram</a></li>
+                <li><a target="_blank" href="https://www.pinterest.co.kr/">pinterest</a></li>
+                <li><a target="_blank" href="https://kr.linkedin.com/">linkedin</a></li>
+            </ol>
+        </div>
+        <div>
+            <ol>
+                <li>delivery icon 01</li>
+                <li>delivery icon 02</li>
+                <li>delivery icon 03</li>
+            </ol>
+            <p>
+                <mark>COMMANDEZ EN TOUTE SÉRÉNITÉ !</mark>
+                © Copyright Ladurée Paris 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
