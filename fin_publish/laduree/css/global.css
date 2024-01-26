@@ -1,0 +1,35 @@
+
+[class^='panel']:not(.active){
+    display: none;
+}
+
+header>div:first-of-type a{
+    font-family: 'Caveat';
+}
+
+header input{
+    background-color: transparent; border: none; padding: 0; cursor: pointer;
+}
+
+@media screen and (min-width: 1280px){
+    header{
+        position: fixed; width: 100%; top: 0;
+        background-color: #e5e3cb;
+        text-align: center; z-index: 10;
+    }
+    header>div:first-of-type:not(.active){
+        display: none;
+    }
+    header>div:first-of-type{
+        background-color: #c0cb92;
+        line-height: 40px;
+    }
+    header>div:first-of-type a{
+        font-size: 18px; font-weight: 700; text-decoration: none;
+        color: #454545;
+    }
+    header>div:first-of-type input{
+        position: absolute; right: 10%; line-height: 40px;
+        color: #78776b;
+    }
+}
