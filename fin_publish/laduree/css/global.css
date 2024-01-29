@@ -132,4 +132,11 @@ header input,
         border: none; width: 100%; max-width: 500px; margin: 0 auto;
         font-size: 20px; font-weight: 500;
     }
+
+    #cartHave ul{
+        padding: 40px 0;
+    }
+    #cartHave ul li{
+        display: block;
+    }
 }
