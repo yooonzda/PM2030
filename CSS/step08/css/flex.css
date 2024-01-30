@@ -1,0 +1,104 @@
+body,h1{
+    margin: 0;
+}
+[class*='Container']{
+    width: 1000px;
+    margin: 0 auto 100px;
+    border: 5px solid cadetblue;
+    border-radius: 10px;
+    padding: 100px 0;
+}
+.flexContainer{
+    position: relative;
+}
+.flexContainer h2{
+    position: absolute; left: 0; top: -50px;
+}
+.flexItem{
+    margin: 10px; padding: 20px; color: #fff;
+    text-align: center; border-radius: 27px; background-color: black;
+}
+
+.displayContainer{
+    text-align: center;
+    /* 자식의 속성이 inline 값을 계산하지 않고도 '간단한'수평정렬을 할 수 있다 */
+}
+.displayContainer span:nth-of-type(1){background-color: yellow; display: block;}
+.displayContainer span:nth-of-type(2){background-color: palevioletred; display: inline; width: 300px; vertical-align: bottom;}
+.displayContainer span:nth-of-type(3){background-color: darkcyan; display: inline-block; width: 300px; line-height: 100px;}
+
+/* float -> 자손에 속성을 부여 */
+/* flex -> 부모에 속성을 부여 */
+.flexContainer{
+    display: flex;
+}
+.flexContainer.direction{
+    flex-direction: column-reverse;
+}
+
+.flexContainer.wrap{
+    flex-wrap: wrap-reverse;
+}
+.flexContainer.flow .flexItem,
+.flexContainer.wrap .flexItem{
+    width: 300px;
+}
+.flexContainer.flow{
+    flex-flow: row-reverse wrap-reverse;
+    /* 
+    flex-flow : flex-direction , flex-wrap (shorthand)
+    */
+}
+
+/* 
+    direction -> row / justify -> xAxis
+    direction -> column / justify -> yAxis
+
+    main Axis / cross Axis
+*/
+.flexContainer.justifyContent{
+    justify-content: flex-end;
+}
+/* 
+    * space-between : first 좌측 / last 우측 기준으로 정렬한 뒤 나머지를 동일 간격으로 정렬
+    * space-evenly : 여유공간을 모두 동일하게 배분
+    * space-around : flexItem 끼리의 동일 배분
+*/
+
+.flexContainer.alignContent{
+    flex-wrap: wrap; height: 400px;
+    align-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+}
+.flexContainer.alignContent .flexItem{
+    width: 300px;
+}
+.flexContainer.alignItems:hover{
+    align-items: center;
+}
+.flexContainer.alignItems .flexItem:first-of-type{
+    line-height: 50px;
+}
+.flexContainer.alignItems .flexItem:nth-of-type(2){
+    line-height: 100px;
+}
+.flexContainer.justifyItems{
+    width: 600px;
+    display: grid;
+    justify-items: flex-end;
+}
+.flexContainer.justifyItems:hover{
+    justify-items: stretch;
+}
+.flexContainer.orderItem .flexItem.order1{order: 1;}
+.flexContainer.orderItem .flexItem.order2{order: 0;}
+.flexContainer.orderItem .flexItem.order3{order: -1;}
+
+/* 
+    쇼핑몰 판매량순 / 조회수 / 가격높은순 / 낮은순 / 리뷰수
+*/
+
+/* 
+    수직정렬 시 ""가 필요
+*/
