@@ -5,5 +5,7 @@
     }
     section.mainContainer{
         background: url('../images/index_banner.png') left top / cover no-repeat;
+        height: 100vh;
+        /* todo padding / flex / .. */
     }
 }
