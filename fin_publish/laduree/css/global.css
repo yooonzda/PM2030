@@ -4,16 +4,22 @@
 }
 
 #cartEmpty h2,
-#cartHave ul li>div:last-of-type mark{
+#cartHave ul li>div:last-of-type mark,
+footer div:last-of-type p{
     font-family: 'Sono';
 }
 
-header>div:first-of-type a{
+header>div:first-of-type a,
+footer div:last-of-type p mark{
     font-family: 'Caveat';
 }
 
 #cartEmpty input[type='button']:last-of-type{
     font-family: 'Saira';
+}
+
+footer div:first-of-type h2{
+    font-family: 'Quicksand';
 }
 /* 
     *material-icon 사용시 font-family X
@@ -214,5 +220,86 @@ header input,
         font-size: 20px; font-weight: 500;
         line-height: 50px; text-align: center;
         margin-top: 20px;
+    }
+
+    footer{
+        padding: 0 10%; margin: 100px auto; max-width: 1920px;
+    }
+    footer:after{
+        content: ''; display: block; clear: both;
+    }
+    footer div:first-of-type{
+        float: left; width: 20%; max-width: 300px;
+    }
+    footer div:nth-of-type(2){
+        float: left; width: 20%; max-width: 300px; margin-left: 5%;
+    }
+    footer div:last-of-type{
+        float: right; width: 40%;
+    }
+    footer div h2{
+        font-size: 25px; font-weight: 500; color: #414532; text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    footer div ul li{
+        display: block;
+    }
+    footer div ul li:not(:last-of-type){
+        margin-bottom: 10px;
+    }
+    footer div ul li a{
+        text-decoration: none; font-size: 15px; font-weight: 500; color: #5a5a66;
+    }
+    footer div h2+ol:after{
+        content: ''; display: block; clear: both;
+    }
+    footer div h2+ol li{
+        display: block; float: left; width: 20%; 
+        max-width: 50px; line-height: 50px;
+    }
+    footer div h2+ol li:not(:first-of-type){
+        margin-left: 6.666%;
+    }
+    footer div h2+ol li a{
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        text-indent: -9999px;
+    }
+    footer div h2+ol li:nth-of-type(1) a{background-image: url('../images/ico_sns_01.png');}
+    footer div h2+ol li:nth-of-type(2) a{background-image: url('../images/ico_sns_02.png');}
+    footer div h2+ol li:nth-of-type(3) a{background-image: url('../images/ico_sns_03.png');}
+    footer div h2+ol li:nth-of-type(4) a{background-image: url('../images/ico_sns_04.png');}
+    
+    footer div h2+ol li:nth-of-type(1):hover a{background-image: url('../images/ico_sns_01_hover.png');}
+    footer div h2+ol li:nth-of-type(2):hover a{background-image: url('../images/ico_sns_02_hover.png');}
+    footer div h2+ol li:nth-of-type(3):hover a{background-image: url('../images/ico_sns_03_hover.png');}
+    footer div h2+ol li:nth-of-type(4):hover a{background-image: url('../images/ico_sns_04_hover.png');}
+    
+    footer div:last-of-type ol{
+        display: flex; justify-content: flex-end;
+        margin-bottom: 40px;
+    }
+    footer div:last-of-type ol li{
+        display: block;
+        background-repeat: no-repeat; background-position: center bottom;
+        line-height: 110px; text-indent: -9999px;
+    }
+    footer div:last-of-type ol li:not(:first-of-type){
+        margin-left: 8%;
+    }
+    footer div:last-of-type ol li:nth-of-type(1){background-image: url('../images/ico_footer01.png'); width: 90px;}
+    footer div:last-of-type ol li:nth-of-type(2){background-image: url('../images/ico_footer02.png'); width: 128px;}
+    footer div:last-of-type ol li:nth-of-type(3){background-image: url('../images/ico_footer03.png'); width: 113px;}
+
+    footer div:last-of-type p{
+        font-size: 20px; font-weight: 400; color: #45443d;
+        text-align: right;
+    }
+    footer div:last-of-type p mark{
+        display: block; margin-bottom: 30px;
+        font-size: 30px; font-weight: 700; color: #7f8761;
+        background-color: transparent; font-style: normal;
     }
 }

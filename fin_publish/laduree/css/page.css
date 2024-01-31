@@ -1,0 +1,9 @@
+
+@media screen and (min-width: 1280px){
+    section{
+        padding-top: 130px;
+    }
+    section.mainContainer{
+        background: url('../images/index_banner.png') left top / cover no-repeat;
+    }
+}
