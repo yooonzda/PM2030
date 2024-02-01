@@ -5,7 +5,44 @@
     }
     section.mainContainer{
         background: url('../images/index_banner.png') left top / cover no-repeat;
-        height: 100vh;
-        /* todo padding / flex / .. */
+        padding: 575px 10% 280px 50%; box-sizing: border-box;
+        text-align: center;
+    }
+    section.mainContainer>*:not(a){
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.75);
+    }
+    section.mainContainer h2{
+        font-size: 50px; font-weight: 300; color: #ffd6d6;
+        margin-bottom: 20px;
+    }
+    section.mainContainer p{
+        font-size: 25px; font-weight: 500; color: #fffc99;
+        line-height: 35px; margin-bottom: 30px;
+    }
+    section.mainContainer a{
+        font-size: 20px; font-weight: 500; color: #e0838a;
+        display: block; background-color: #ebe4de;
+        margin: 0 auto; max-width: 220px; line-height: 50px;
+        text-decoration: none;
+    }
+    section.listContainer.type01{
+        margin-bottom: 100px;
+    }
+    section.listContainer.type01 .titleBox{
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        padding: 70px 0 620px;
+        text-align: center; margin-bottom: 100px;
+    }
+    section.listContainer.type01 .titleBox.list01{background-image: url('../images/listPage01_banner.png');}
+    section.listContainer.type01 .titleBox.list06{background-image: url('../images/listPage06_banner.png');}
+    section.listContainer.type01 .titleBox h2{
+        font-size: 50px; font-weight: 300; color: #878678;
+        margin-bottom: 40px;
+    }
+    section.listContainer.type01 .titleBox p{
+        font-size: 20px; font-weight: 700; color: #453e45;
+        width: 60%; margin: 0 auto; max-width: 1120px;
+        line-height: 30px;
     }
 }
