@@ -10,11 +10,13 @@ header>div:last-of-type>ul li a,
 section.mainContainer h2,
 section.listContainer.type01 .titleBox h2,
 section.listContainer.type01 ul li div h3,
+section.listContainer.type02 .titleBox h2 small,
 footer div:last-of-type p{
     font-family: 'Sono';
 }
 
 header>div:first-of-type a,
+section.listContainer.type02 .titleBox h2,
 footer div:last-of-type p mark{
     font-family: 'Caveat';
 }

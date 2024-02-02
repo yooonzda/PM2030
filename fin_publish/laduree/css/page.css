@@ -30,7 +30,7 @@
     }
     section.listContainer.type01 .titleBox{
         background-repeat: no-repeat;
-        background-position: left bottom;
+        background-position: center bottom;
         padding: 70px 0 620px;
         text-align: center; margin-bottom: 100px;
     }
@@ -49,7 +49,7 @@
         max-width: 1920px; margin: 0 auto;   
     }
     section.listContainer.type01 ul li{
-        position: relative; margin-bottom: 80px;
+        position: relative; margin-bottom: 80px; display: block;
     }
     section.listContainer.type01 ul li:after{
         content: ''; display: block; clear: both;
@@ -85,5 +85,45 @@
         text-align: center; text-decoration: none; background-color: #ebe4de;
         align-self: flex-end;
     }
+    section.listContainer.type02 .titleBox{
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 616px; margin-bottom: 80px;
+    }
+    section.listContainer.type02 .titleBox.list02{background-image: url('../images/listPage02_banner.png');}
+    section.listContainer.type02 .titleBox.list03{background-image: url('../images/listPage03_banner.png');}
+    section.listContainer.type02 .titleBox.list04{background-image: url('../images/listPage04_banner.png');}
+    section.listContainer.type02 .titleBox.list05{background-image: url('../images/listPage05_banner.png');}
 
+    section.listContainer.type02 .titleBox h2{
+        padding: 50px 0; margin: 0 auto; max-width: 1920px; width: 80%;
+        font-size: 50px; font-weight: 400; color: #78776b;
+        text-shadow: 2px 1px 3px rgba(237, 199, 199, 0.75);
+    }
+    section.listContainer.type02 .titleBox h2 small{
+        font-size: 20px; font-weight: 400; text-transform: uppercase;
+    }
+    section.listContainer.type02>div:last-of-type{
+        max-width: 1920px; margin: 0 auto; padding: 0 10%;
+    }
+    section.listContainer.type02>div:last-of-type mark{
+        display: block; margin-bottom: 30px;
+        background-color: transparent; font-style: normal;
+        font-size: 40px; font-weight: 400; color: #808761;
+    }
+    section.listContainer.type02>div:last-of-type p{
+        font-size: 18px; font-weight: 400; color: #303325;
+        line-height: 28px; margin-bottom: 80px;
+    }
+    section.listContainer.type02>div:last-of-type select{
+        appearance: none;
+        background: url('../images/icon_more.svg') 97% center no-repeat;
+        font-size: 20px; font-weight: 500; height: 50px; padding: 0 1%;
+        display: block; border-radius: 5px; color: #1d1d21;
+        border: 1px solid #1d1d21;
+        margin-left: auto; width: 25%; max-width: 400px;
+    }
+    ul.itemSlot li>div{
+        opacity: 0;
+    }
 }
