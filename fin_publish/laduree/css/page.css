@@ -71,4 +71,17 @@
     section.listContainer.type01 ul li:nth-of-type(2n) div{
         left: 0; top: 0; padding: 0 5% 0 10%;
     }
+    section.listContainer.type01 ul li div h3{
+        font-size: 40px; font-weight: 400; color: #5a5866;
+        text-transform: uppercase;
+    }
+    section.listContainer.type01 ul li div p{
+        font-size: 18px; font-weight: 500; color: #717856; line-height: 28px;
+    }
+    section.listContainer.type01 ul li div a{
+        display: block; width: 25%; max-width: 125px;
+        font-size: 15px; font-weight: 500; color: #242b47; line-height: 35px;
+        text-align: center; text-decoration: none; background-color: #ebe4de;
+    }
+
 }

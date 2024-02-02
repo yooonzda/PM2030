@@ -7,6 +7,7 @@
 #cartHave ul li>div:last-of-type mark,
 section.mainContainer h2,
 section.listContainer.type01 .titleBox h2,
+section.listContainer.type01 ul li div h3,
 footer div:last-of-type p{
     font-family: 'Sono';
 }
@@ -17,12 +18,14 @@ footer div:last-of-type p mark{
 }
 
 #cartEmpty input[type='button']:last-of-type,
-section.mainContainer a{
+section.mainContainer a,
+section.listContainer.type01 ul li div a{
     font-family: 'Saira';
 }
 
 section.mainContainer p,
 section.listContainer.type01 .titleBox p,
+section.listContainer.type01 ul li div p,
 footer div:first-of-type h2{
     font-family: 'Quicksand';
 }
