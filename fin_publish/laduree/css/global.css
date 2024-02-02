@@ -3,6 +3,8 @@
     display: none;
 }
 
+header>div:last-of-type>nav ul li a,
+header>div:last-of-type>ul li a,
 #cartEmpty h2,
 #cartHave ul li>div:last-of-type mark,
 section.mainContainer h2,
