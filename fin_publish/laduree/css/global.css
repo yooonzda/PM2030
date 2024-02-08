@@ -23,7 +23,8 @@ footer div:last-of-type p mark{
 
 #cartEmpty input[type='button']:last-of-type,
 section.mainContainer a,
-section.listContainer.type01 ul li div a{
+section.listContainer.type01 ul li div a,
+ul.itemSlot li>div a{
     font-family: 'Saira';
 }
 
