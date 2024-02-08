@@ -31,6 +31,7 @@ ul.itemSlot li>div a{
 section.mainContainer p,
 section.listContainer.type01 .titleBox p,
 section.listContainer.type01 ul li div p,
+section.detailContainer>a,
 footer div:first-of-type h2{
     font-family: 'Quicksand';
 }

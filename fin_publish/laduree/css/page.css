@@ -171,4 +171,142 @@
         font-size: 20px; font-weight: 500; color: #e0838a;
         background-color: #ebe4de;
     }
+    
+    section.detailContainer>a{
+        display: block;
+        padding: 45px 10% 45px 10%; max-width: 1920px; margin: 0 auto;
+        font-size: 25px; font-weight: 500; color: #78776b;
+        text-decoration: none; text-transform: uppercase;
+    }
+    section.detailContainer>a::before{
+        content: '<'; display: inline-block; margin-right: 20px;
+    }
+    /* 
+     부모에서 공간을 가두지 않고 개별적으로 공간을 잡아서 
+    */
+    section.detailContainer>div:first-of-type{
+        max-width: 1920px; padding: 0 10%; margin: 0 auto 100px;
+    }
+    section.detailContainer>div:first-of-type:after{
+        content: ''; display: block; clear: both;
+    }
+    section.detailContainer>div:first-of-type>img{
+        width: 45%; float: left; display: block;
+    }
+    section.detailContainer>div:first-of-type>div{
+        width: 50%; float: left; margin-left: 5%;
+    }
+    section.detailContainer>div:first-of-type>div ol{
+        margin-bottom: 45px;
+    }
+    section.detailContainer>div:first-of-type>div ol:after{
+        content: ''; display: block; clear: both;
+    }
+    section.detailContainer>div:first-of-type>div ol li{
+        width: 30%; float: left; display: block;
+    }
+    section.detailContainer>div:first-of-type>div ol li:not(:first-of-type){
+        margin-left: 5%;
+    }
+    section.detailContainer>div:first-of-type>div ol li img{
+        width: 100%;
+    }
+    section.detailContainer>div:first-of-type>div h2{
+        font-size: 40px; font-weight: 400; color: #66655b;
+    }
+    section.detailContainer>div:first-of-type>div h2 small{
+        font-size: 25px; font-weight: 500; color: #524b0b;
+        display: block; margin: 30px 0 40px;
+    }
+    section.detailContainer>div:first-of-type>div strong{
+        display: block; text-align: right;
+        font-size: 25px; font-weight: 500; color: #000;
+    }
+    section.detailContainer>div:nth-of-type(2){
+        max-width: 1920px; margin: 0 auto; padding: 0 10%;
+    }
+    section.detailContainer>div h3{
+        font-size: 50px; font-weight: 300; color: #878678;
+        text-align: center;
+    }
+    section.detailContainer>div:nth-of-type(2) h3{
+        margin-bottom: 80px;
+    }
+    section.detailContainer>div:nth-of-type(2) ul:first-of-type{
+        text-align: center; margin-bottom: 80px;
+    }
+    section.detailContainer>div:nth-of-type(2) ul:first-of-type li{
+        display: inline-block;
+    }
+    section.detailContainer>div:nth-of-type(2) ul:first-of-type li:not(:first-of-type){
+        margin-left: 60px;
+    }
+    section.detailContainer>div:nth-of-type(2) ul:first-of-type li input[type='radio']{
+        display: none;
+    }
+    section.detailContainer>div:nth-of-type(2) ul:first-of-type li label{
+        display: block;
+        background-repeat: no-repeat;
+        background-position: left center;
+        line-height: 44px; padding-left: 60px;
+        background-size: 44px;
+    }
+    section.detailContainer>div:nth-of-type(2) ul:first-of-type li:nth-of-type(1) label{background-image: url('../images/icon_radio_01.svg');}
+    section.detailContainer>div:nth-of-type(2) ul:first-of-type li:nth-of-type(2) label{background-image: url('../images/icon_radio_02.svg');}
+    section.detailContainer>div:nth-of-type(2) ul:first-of-type li:nth-of-type(3) label{background-image: url('../images/icon_radio_03.svg');}
+
+    section.detailContainer>div:nth-of-type(2) ul:first-of-type li input[type='radio']:checked+label{
+        color: #e0838a;
+    }
+
+    section.detailContainer>div:nth-of-type(2)>ul:first-of-type li:nth-of-type(1) input[type='radio']:checked+label{background-image: url('../images/icon_radio_01_active.svg');}
+    section.detailContainer>div:nth-of-type(2)>ul:first-of-type li:nth-of-type(2) input[type='radio']:checked+label{background-image: url('../images/icon_radio_02_active.svg');}
+    section.detailContainer>div:nth-of-type(2)>ul:first-of-type li:nth-of-type(3) input[type='radio']:checked+label{background-image: url('../images/icon_radio_03_active.svg');}
+
+    section.detailContainer>div:nth-of-type(3) h3{
+        margin-bottom: 50px;
+    }
+    .detailPop{
+        display: none;
+    }
+    section.detailContainer>div:nth-of-type(2)>ul:nth-of-type(2){
+        width: 70%; margin: 0 auto;
+    }
+    section.detailContainer>div:nth-of-type(2)>ul:nth-of-type(2):after{
+        content: ''; display: block; clear: both;
+    }
+    section.detailContainer>div:nth-of-type(2)>ul:nth-of-type(2) li{
+        display: block; width: 16%; float: left; text-align: center; margin-bottom: 60px;
+    }
+    section.detailContainer>div:nth-of-type(2)>ul:nth-of-type(2) li:not(:nth-of-type(5n)){
+        margin-right: 5%;
+    }
+    section.detailContainer>div:nth-of-type(2)>ul:nth-of-type(2) li>span{
+        display: block;
+        font-size: 18px; font-weight: 500; color: #717856;
+        margin-bottom: 20px;
+    }
+    section.detailContainer>div:nth-of-type(2)>ul:nth-of-type(2) li img{
+        width: 100%;
+        border: 1px solid #bab8a6; padding: 35px 20px; box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+    div.countComponent input{
+        border: 1px solid #878678; line-height: 30px;
+        width: 33.333%; max-width: 50px;
+        background-color: transparent; padding: 0;
+        vertical-align: bottom;
+    }
+    div.countComponent span{
+        border: 1px solid #878678; line-height: 30px;
+        width: 33.333%; text-align: center; max-width: 50px;
+        display: inline-block;
+        margin-left: -7px;
+    }
+    div.countComponent input:last-of-type{
+        margin-left: -6px;
+    }
+    section.detailContainer>div:last-of-type{
+        max-width: 1920px; margin: 0 auto; padding: 0 10%;
+    }
 }
