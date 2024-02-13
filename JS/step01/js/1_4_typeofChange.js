@@ -11,3 +11,17 @@
     ? 명시적 형변환
     * method 나 lib Core func를 이용하여 강제로 숫자 -> 문자 로 변환.
 */
+
+function agePlus(){
+    var age = window.prompt();
+    // ! console.log(typeof(age));
+    // * 문자 -> 숫자 
+    var result = parseInt(age) + 20;
+    console.log(result);
+}
+
+function forcedString(){
+    var a = '30';
+    var result = 1 + a + 20;
+    console.log('result = '+ result + '자료형은' + typeof(result));
+}
