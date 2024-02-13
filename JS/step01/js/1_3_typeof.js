@@ -7,7 +7,9 @@
 
     * 2. 문자형 (String)
     * 일상생활 사용 글자
-    
+    * var textIMG = images/index_bg.png
+    * var textIMG = 'images/index_bg.png'
+
     * 3. 논리형 (Boolean)
     * true(참) or false(거짓)
     * true : 맞음, 1, 같음, 진실, 성공
@@ -28,3 +30,19 @@
 
     ! 이외 함수(function), 객체(object) 등이 존재.
 */
+
+function testType(){
+    var testVar;
+    console.log('testVar의 자료형은' + typeof(testVar));
+    testVar = '1';
+    console.log('testVar의 자료형은' + typeof(testVar));
+    testVar = true;
+    console.log('testVar의 자료형은' + typeof(testVar));
+    testVar = 1;
+    console.log('testVar의 자료형은' + typeof(testVar));
+}
+
+// todo 숫자형 확인
+// todo 문자형 확인
+// todo 논리형 확인
+// todo undefined 확인
