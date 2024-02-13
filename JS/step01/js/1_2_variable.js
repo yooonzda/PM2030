@@ -58,3 +58,17 @@
     var objClass = new Markclass();
     objClass.showName();
 */
+
+var userName; 
+userName = 'yoon';
+
+var userAge = '30';
+
+function testFunction(){
+    var value = 10;
+    value = 20;
+    value = value + 30;
+    value += 30;
+    value -= 30;
+    console.log(value);
+}
