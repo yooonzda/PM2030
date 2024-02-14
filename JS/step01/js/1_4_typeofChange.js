@@ -61,28 +61,30 @@ function numbString(){
     console.log(parseInt(a)); // * 200 parseInt() 숫자로 형변환 할 때 정수로 반환
     console.log('result = ' + result);
 }
-// * parseInt(value) -> 정수
-// * parseFloat(value) -> 실수
+// * parseInt(value) -> 정수 (소수 버림)
+// * parseFloat(value) -> 실수 (소수까지 표현)
 // * Number(value) -> 구분 없이 형변환
 
 // ! 변수 test 에 들어있는 숫자 100을 문자형으로 변환 (3가지)
 // ! 1. 암시적 형변환
 // ! 2. 전역함수 
 // ! 3. 꼬리함수
+// ! result = 100;
+// ! result = 270.51;
 
 function todo1(){
     var test = 100;
-    var result = ;
+    var result = test + '';
     console.log(typeof(result) + '=' + result);
 }
 function todo2(){
     var test = 100;
-    var result = ;
+    var result = String(test);
     console.log(typeof(result) + '=' + result);
 }
 function todo3(){
     var test = 100;
-    var result = ;
+    var result = test.toString();
     console.log(typeof(result) + '=' + result);
 }
 
@@ -92,12 +94,12 @@ function todo3(){
 
 function todo4(){
     var test = '100.51';
-    var result = test + 150 + "20";
+    var result = parseFloat(test) + 150 + parseInt("20");
     console.log(typeof(result) + '=' + result);
 }
 
 function todo5(){
     var test = '100.51';
-    var result = test + 150 + "20";
+    var result = Number(test) + 150 + Number("20");
     console.log(typeof(result) + '=' + result);
 }
