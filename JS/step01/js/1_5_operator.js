@@ -19,7 +19,7 @@
     * ++ 1씩 증가, -- 1씩 감소
     * number++ / number--
 
-    ? 조건비교 연산자
+    ? 조건비교 연산자 ->  boolean
     * >= 좌변이 우변보다 크거나 같다.
     * <= 우변이 좌변보다 크거나 같다.
     * > 좌변이 크다.
@@ -80,9 +80,54 @@ function numberPlusAfter(){
 
 function numberPlusTodo(){
     var number = 10;
-    alert(number++); //? 출력 : / 현재변수 : - 서술. 
-    alert(--number); //? 출력 : / 현재변수 : - 서술. 
-    alert(++number); //? 출력 : / 현재변수 : - 서술. 
-    alert(number--); //? 출력 : / 현재변수 : - 서술. 
-    console.log(number); //? 출력 : / 현재변수 : - 서술. / 최종 number - ?. 
+    alert(number++); //? 출력 : 10/ 현재변수 : 11- 서술. 
+    alert(--number); //? 출력 : 10/ 현재변수 : 10- 서술. 
+    alert(++number); //? 출력 : 11/ 현재변수 : 11- 서술. 
+    alert(number--); //? 출력 : 11/ 현재변수 : 10- 서술. 
+    console.log(number); //? 출력 : 10/ 현재변수 : 10- 서술. / 최종 number - 10. 
+}
+
+function compareOperator1(){
+    var a = 20;
+    var b = 30;
+    var result = a>b; // false
+    console.log('20 > 30 = ' + result );
+}
+
+function compareOperator2(){
+    var a = 10;
+    var b = 20;
+    var result = a!=b; // true
+    console.log('10 != 20 ?' + result );
+}
+
+function logicalOperator1(){
+    var a = '남자';
+    var b = '웹디자이너';
+    var result = (a=='여자')&&(b=='웹디자이너'); // 여자이면서 웹디자이너 여야 true 가 나옴
+    console.log('result = '+ result);
+}
+
+// * ID 와 PW 가 일치 할 때만 true
+function logicalOperator2(){
+    var userID = 'yoon';
+    var userPW = '1234';
+    var result = (a=='yoon')&&(b=='1234');
+    console.log('로그인' + result);
+}
+
+function operatorEX(){
+    var list = '';
+    list += '<ul>';
+    list += '   <li>hello</li>';
+    list += '   <li>JS</li>';
+    list += '</ul>';
+    document.body.innerHTML = list;
+}
+
+function commpareOperator3(){
+    console.log(30>20 && 20>10); // * true , 1 -> 실제 : false
+    // * 30>20 을 먼저 판단 -> true
+    // * true > 10 을 판단 -> false
+    // * 30>20>10
 }
