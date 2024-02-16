@@ -80,3 +80,13 @@ function userInfoCheck2(){
 	alert('종료');
     
 */
+
+// todo 음수를 제외한 양수에서 자릿수를 알려주는 함수
+function numberCount(){
+    var numb = window.prompt('숫자를 입력하세요');
+    
+    alert('입력하신 숫자의 자릿수는? ' + numb.length);
+}
+// * 1. 한자리 ~ 세자리 
+// * if가 만능 X
+// * string.length -> 글자의 갯수
