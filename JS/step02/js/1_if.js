@@ -37,6 +37,46 @@ function oddOrEven(){
 // ! hour -> 5678 -> true
 
 function userInfoCheck(){
-    var userID = '';
-    var userPW = '';
+    var userID = window.prompt('ID를 입력하세요');
+    var userPW = window.prompt('password 를 입력하세요');
+    var userInfoID = ['yoon', 'hour'];
+    
+    if(userID == 'yoon' && userPW == '1234'){
+        console.log('로그인 완료');
+    }
+
+    if(userID == 'yoon'){
+        if(userPW == '1234'){
+            console.log('로그인 완료');
+        }else{
+            console.log('비밀번호가 틀렸습니다.');
+        }
+    }
 }
+
+// *삼항처리
+function userInfoCheck2(){
+    var userID = window.prompt('사용자의 아이디');
+    var userPW = window.prompt('사용자의 패스워드');
+
+    (userID=='yoon'&&userPW=='1234')?alert('로그인 되었습니다.') : alert('ID 혹은 Password 가 틀렸습니다.');
+}
+// ! () ?() :();
+
+/*
+    ? 조건문
+    
+    실무사용의 예
+    1. 로그인 시 아이디와 패스워드가 서버에 저장된 정보와 같은지 비교 후 같다면 승인, 아니라면 오류메세지를 띄운다.
+    2. 게임같은 경우 자신이 공격을 했을 때 상대방을 타격 했는지 여부를 판별 할 수 있다.
+    3. 경품추첨시 유저가 뽑은 번호에 따라 경품 당첨 여부를 따질 수 있다.
+    4. 삭제작업 수행시 사용자가 yes를 눌렀을 때와 no 를 눌렀을 때 수행할지 말지를 결정 할 수있다.
+    5. slide 같은 ui component 의 좌, 우 방향으로 최대치로 이동 하였는지 판별 할 수있다.
+
+	if(273 < 100){
+		//표현식 "273 < 100" 이 참일때 실행 = 거짓이기때문에 당연히 실행안함.
+		 alert('273<100=>true');
+	}
+	alert('종료');
+    
+*/
