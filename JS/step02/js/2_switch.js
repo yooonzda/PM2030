@@ -86,3 +86,32 @@ function calcuator(){
             break;
     }
 }
+
+// * WASD 를 눌렀을 때 해당 방향을 출력하는 함수
+function downKey(){
+    var x = '';
+    document.addEventListener('keydown',function(e){
+        x = 87;
+        switch(x){
+            case 87:
+                console.log('위');
+                break;
+            case 65:
+                console.log('왼쪽');
+                break;
+            case 83:
+                console.log('아래');
+                break;
+            case 68:
+                console.log('오른쪽');
+                break;
+        }
+    });
+}
+// * e -> event 감지에 대한 정보를 담은 매개변수
+// * W = 87 / A = 65 / S = 83 / D = 68
+// * console.log('위 up');
+
+// * 1) w 를 눌렀다.
+// * 2) x 라는 변수에 87이 들어간다.
+// * 3) case 87 일때 그에 맞는 출력을 한다.
