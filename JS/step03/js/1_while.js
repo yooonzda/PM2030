@@ -72,7 +72,8 @@ function whileLog(){
     var userName = 'yoon';
     var i = 1;
     while(i<11){
-
+        console.log(userName + i + '번째 이름 출력');
+        i++;
     }
 }
 // * console 10번의 이름 출력
