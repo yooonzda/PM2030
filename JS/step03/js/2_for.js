@@ -82,7 +82,7 @@ function halfPyramid(){
     for(var i=1; i<=10; i++){
         for(var j=0; j<i; j++){
             // console.log('현재 i = ' + i + ', 현재 j = ' + j);
-            star = star + '&nbsp';
+            star = star + '*';
         }
         star += '<br>';
     }
