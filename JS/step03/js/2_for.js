@@ -88,3 +88,30 @@ function halfPyramid(){
     }
     document.write(star);
 }
+
+// * ' ' -> &nbsp
+// ? i=1 false: 9 true: 1 false: 9
+// ? false -> &nbsp
+// ? ture -> *
+
+// i loop 10 / j loop 19
+
+function pyramid(){
+    for(var i=1; i<=10; i++){
+        var star = '';
+        for(var j=1; j<=19; j++){
+            if(j>=(10 + 1 - i) & j<=(10 - 1 + i)){
+                star += '*';
+            }else{
+                star += ' ';
+            }
+            (j>=(10 + 1 - i) & j<=(10 - 1 + i)) ? star += '*' : star+=' ';
+        }
+        console.log(star);
+    }
+}
+// ? i=1 10 *
+// ? i=2 9 10 11 * j >= 9 & j <= 11
+// ? i=3 8 9 10 11 12 * (10 + 1 - i) & (10 - 1 + i)
+// ? .. i=9 2 3 4 5 .. 13 14 15 16 17 18 *
+// ? i=10 1 ~ 19 *
