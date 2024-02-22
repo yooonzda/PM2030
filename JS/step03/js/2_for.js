@@ -105,7 +105,7 @@ function pyramid(){
             }else{
                 star += ' ';
             }
-            (j>=(10 + 1 - i) & j<=(10 - 1 + i)) ? star += '*' : star+=' ';
+            // (j>=(10 + 1 - i) & j<=(10 - 1 + i)) ? star += '*' : star+=' ';
         }
         console.log(star);
     }
@@ -115,3 +115,20 @@ function pyramid(){
 // ? i=3 8 9 10 11 12 * (10 + 1 - i) & (10 - 1 + i)
 // ? .. i=9 2 3 4 5 .. 13 14 15 16 17 18 *
 // ? i=10 1 ~ 19 *
+
+
+function favorFluit(){
+    var fluitArray = ['딸기','포도','수박','사과'];
+    for(var i=0; i<fluitArray.length; i++){
+        console.log(fluitArray[i]);
+    }
+}
+
+function reversefavorFluit(){
+    var fluitArray = ['딸기','포도','수박','사과'];
+    for(var i=fluitArray.length-1; i>=0; i--){
+        console.log(fluitArray[i]);
+    }
+}
+// * 가지고 있는 숫자 => array.length
+// * 만들어야 하는 숫자 => 3 (array.length-1)
