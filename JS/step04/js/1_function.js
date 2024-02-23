@@ -127,7 +127,43 @@ function div(a,b){
 
 // * 1초 마다 매개변수 값으로 넘긴 익명함수 호출
 function loopStart(){
-    setinterval(function(){
+    setInterval(function(){
         document.write('안녕');
     },1000);
+}
+
+// * 함수를 매개변수로 전달받을 수 있다.
+function callFunction(otherFunction){
+    for(var i=0; i<10; i++){
+        otherFunction();
+    }
+}
+// ? 실행식 -> callFunction(justFunction);
+
+function justFunction(){
+    document.write('안녕','<br>');
+}
+
+function createHello(){
+    function hello(user){
+        document.write(user+'안녕');
+    }
+    return hello;
+}
+
+var result = createHello();
+
+// todo num 을 매개변수로 구구단을 출력하는 함수
+function printGugudan(){
+    var num = 5;
+    for(var i=2; i<=num; i++){
+        document.write(i + '단 출력','<br>');
+
+    }
+}
+
+function testFunction(){
+    for(){
+        document.write('2X'+  +'='+ );
+    }
 }
