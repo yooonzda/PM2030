@@ -71,20 +71,63 @@ function calculator(num1,num2,op){
 }
 // * calculator(1,2,+); => 3
 
-// * 1. calculator2(op);
+// * 1. calculator2(op); -> 매개변수 자리가 없지만 매개변수를 받아야한다.
+function calculatorTodo1(op){
+    var result = '';
+    switch (op){
+        case '+':
+            result = arguments[1] + arguments[2];
+            break;
+        case '-':
+            result = arguments[1] - arguments[2];
+            break;
+        case '*':
+            result = arguments[1] * arguments[2];
+            break;
+        case '/':
+            result = arguments[1] / arguments[2];
+            break;
+    }
+    console.log(result);
+}
 
 // * 2. calculator3(num1,num2,op);
 // * case '+':
 // *        result = add(num1,num2);
-function add(){
-
+function calculatorTodo2(num1,num2,op){
+    var result = '';
+    switch (op){
+        case '+':
+            result = add(num1,num2);
+            break;
+        case '-':
+            result = sub(num1,num2);
+            break;
+        case '*':
+            result = mul(num1,num2);
+            break;
+        case '/':
+            result = div(num1,num2);
+            break;
+    }
+    console.log(result);
 }
-function sub(){
-
+function add(a,b){
+    return a+b;
 }
-function mul(){
-
+function sub(a,b){
+    return a - b;
 }
-function div(){
+function mul(a,b){
+    return a * b;
+}
+function div(a,b){
+    return a / b;
+}
 
+// * 1초 마다 매개변수 값으로 넘긴 익명함수 호출
+function loopStart(){
+    setinterval(function(){
+        document.write('안녕');
+    },1000);
 }
