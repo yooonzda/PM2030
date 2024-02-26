@@ -146,7 +146,7 @@ function justFunction(){
 
 function createHello(){
     function hello(user){
-        document.write(user+'안녕');
+        document.write(user+"'안녕'");
     }
     return hello;
 }
