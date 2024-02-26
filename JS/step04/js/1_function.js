@@ -154,16 +154,14 @@ function createHello(){
 var result = createHello();
 
 // todo num 을 매개변수로 구구단을 출력하는 함수
-function printGugudan(){
-    var num = 5;
+function printGugudan(num){
+    // var num = 5;
     for(var i=2; i<=num; i++){
         document.write(i + '단 출력','<br>');
-
+        for(var j=1; j<=num; j++){
+            document.write(i + 'X' + j + '=' + (i*j), '<br>');
+        }
+        document.write('<br>');
     }
 }
-
-function testFunction(){
-    for(){
-        document.write('2X'+  +'='+ );
-    }
-}
+// * i = 단 / j = 곱해지는 수
