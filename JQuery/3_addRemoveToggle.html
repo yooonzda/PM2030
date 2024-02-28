@@ -95,6 +95,16 @@
         .accComponent2 div h2.active+p{
             display: block;
         }
+
+        .changeText:not(.active){
+            font-size: 16px;
+        }
+        .changeText.active{
+            font-size: 40px;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -112,5 +122,8 @@
             <span class="material-symbols-outlined toggleVisible">visibility_off</span>
         </form>
     </div>
+
+    <div class="changeText">before</div>
+    <input type="button" value="click!" class="changeBtn">
 </body>
 </html>

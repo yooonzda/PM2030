@@ -2,6 +2,9 @@ $(document).ready(function(){
     $('.menu').click(testFunction);
 
     toggleCheck();
+
+    togglePW();
+    changText();
 });
 
 function testFunction(){
@@ -28,6 +31,47 @@ function toggleCheck(){
     });
 }
 
+// todo 1. 눈 아이콘 바꾸기
+// ? 2. input type : password -> text
 function togglePW(){
-    
+    var target = $('.toggleVisible');
+    var toggleInput = $('#userPW');
+    var toggleStatus = false;
+
+    target.click(function(){
+        toggleStatus = !toggleStatus;
+        if(toggleStatus == true){
+            target.text('visibility');
+            toggleInput.attr('type','text');
+        }else{
+            target.text('visibility_off');
+            toggleInput.attr('type','password');
+        }
+    });
+
+    // $('tag').attr('어떤 속성','어떤 값으로');
+    // $('tag').css('어떤 속성','어떤 값으로');
+
+}
+// todo input:button 을 클릭(toggle)하면 div 의 text(before->after) 와 font-size(16px->40px)를 바꾸는 함수
+
+function changText(){
+    var target = $('.changeBtn');
+    var changeDiv = $('.changeText');
+    var toggleStatus = false;
+
+    target.click(function(){
+        toggleStatus = !toggleStatus;
+        changeDiv.toggleClass('active');
+
+        if(toggleStatus == true){
+            changeDiv.text('after');
+            // changeDiv.css('font-size','40px');
+            // changeDiv.addClass('active');
+        }else{
+            changeDiv.text('before');
+            // changeDiv.css('font-size','16px');
+            // changeDiv.removeClass('active');
+        }
+    });
 }
