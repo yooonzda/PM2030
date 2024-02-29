@@ -5,6 +5,8 @@ $(document).ready(function(){
 
     togglePW();
     changText();
+
+    tabUI();
 });
 
 function testFunction(){
@@ -73,5 +75,19 @@ function changText(){
             // changeDiv.css('font-size','16px');
             // changeDiv.removeClass('active');
         }
+    });
+}
+
+
+// * tab -> id & data-
+// * ex) li(data-) 클릭하면 div(id) 가 활성
+function tabUI(){
+    $('.tabMenu li').click(function(){
+        $('.tabMenu li').removeClass('activated');
+        $(this).addClass('activated');
+        var activeTab = $(this).attr('data-tabNumb');
+
+        $('.tabPage').removeClass('activated');
+        $('#'+activeTab).addClass('activated');
     });
 }
