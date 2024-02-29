@@ -7,7 +7,8 @@ $(document).ready(function(){
     changText();
 
     tabUI();
-    accControl();
+    accControl('.accComponent li h3');
+    accControl('.accComponent2 div h2');
 });
 
 function testFunction(){
@@ -93,8 +94,10 @@ function tabUI(){
     });
 }
 
-function accControl(){
-    $('.accComponent li h3').click(function(){
+function accControl(target){
+    $(target).click(function(){
         $(this).toggleClass('active');
     });
 }
+
+// todo 복습 심화 -> LADUREE JS 파일 열어서 확인해보기
