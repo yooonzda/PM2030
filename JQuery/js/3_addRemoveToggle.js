@@ -7,6 +7,7 @@ $(document).ready(function(){
     changText();
 
     tabUI();
+    accControl();
 });
 
 function testFunction(){
@@ -89,5 +90,11 @@ function tabUI(){
 
         $('.tabPage').removeClass('activated');
         $('#'+activeTab).addClass('activated');
+    });
+}
+
+function accControl(){
+    $('.accComponent li h3').click(function(){
+        $(this).toggleClass('active');
     });
 }
