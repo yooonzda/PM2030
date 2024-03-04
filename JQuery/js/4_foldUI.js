@@ -39,15 +39,20 @@ function imgAlignMix(){
     // * 200 200 200 -> i/3 = 1.xxxx
     // * 400 400 400 -> i/3 = 2.xxxx
 
-    $().click(function(){
+    $('.alignMix').click(function(){
         for(var i=0; i<img.length; i++){
             var image = img.eq(i);
-            xpos = image.width()*(i%3);
+            xpos = (image.width())*(i%3);
             //* i=0 / i%3 = 0
             //* i=1 / i%3 = 1
             //* i=2 / i%3 = 2
-
             //* i=3 / i%3 = 0
+            ypos = (image.width())*parseInt(i/3);
+            image.css({
+                'left': xpos,
+                'top': ypos
+            });
+            console.log(image);
         }
     });
 }
