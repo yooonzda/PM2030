@@ -24,7 +24,7 @@ function imgAlignHori(){
 }
 
 function imgAlignMix(){
-    var img = $('imgContainerMix img');
+    var img = $('.imgContainerMix img');
     var xpos = 0;
     var ypos = 0;
 
