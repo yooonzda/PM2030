@@ -9,15 +9,24 @@
     <!-- *1. bxSlider 에서 사용된 js -->
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
     <!-- *2. bxSlider 에서 사용된 css -->
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <ul>
+    <ul class="mainSlider">
         <li><img src="images/wallpaper1.jpg" alt="example01"></li>
         <li><img src="images/wallpaper2.jpg" alt="example02"></li>
         <li><img src="images/wallpaper3.jpg" alt="example03"></li>
         <li><img src="images/wallpaper4.jpg" alt="example04"></li>
-    </ul>    
+    </ul>
+    <!-- ? 구조를 만들지 않아도 bxSlider 에서 제공 -->
+    <!-- ? pagerCustom 이용하기 -->
+    <ol class="customPager">
+        <li><a data-slide-index="0"><img src="images/wallpaper1.jpg" alt="example1"></a></li>
+        <li><a data-slide-index="1"><img src="images/wallpaper2.jpg" alt="example2"></a></li>
+        <li><a data-slide-index="2"><img src="images/wallpaper3.jpg" alt="example3"></a></li>
+        <li><a data-slide-index="3"><img src="images/wallpaper4.jpg" alt="example4"></a></li>
+    </ol>
 </body>
 </html>
