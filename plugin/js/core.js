@@ -11,6 +11,17 @@ $(document).ready(function(){
 
         pager: true,
         pagerType: 'full',
-        pagerCustom: '.customPager'
+        pagerCustom: '.customPager',
+
+        controls: true,
+        prevSelector: '.btn_prev',
+        nextSelector: '.btn_next',  
+        prevText: '이전',
+        nextText: '다음',
+
+        auto: true,
+        autoDelay: 1000,
+        pause: 500,
+        autoHover: true
     });
 });
